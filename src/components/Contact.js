@@ -37,7 +37,7 @@ export default function Contact() {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.7)" }}
-                        src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                        src="https://www.google.com/maps/place/64+Rue+Alfred+de+Musset,+91400+Orsay/@48.7028524,2.2006222,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6789eade1d4d7:0x88fdb67cf35d4a41!8m2!3d48.7028489!4d2.2028109"
                     />
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
@@ -45,8 +45,8 @@ export default function Contact() {
                                 ADDRESS
                             </h2>
                             <p className="mt-1">
-                                97 Warren St. <br />
-                                New York, NY 10007
+                                64 Rue Alfred de Musset <br />
+                                Orsay, 91400
                             </p>
                         </div>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -54,12 +54,12 @@ export default function Contact() {
                                 EMAIL
                             </h2>
                             <a className="text-indigo-400 leading-relaxed">
-                                reedbarger@email.com
+                                prescilla.lecurieux@gmail.com
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                                 PHONE
                             </h2>
-                            <p className="leading-relaxed">123-456-7890</p>
+                            <p className="leading-relaxed">0612683574</p>
                         </div>
                     </div>
                 </div>
