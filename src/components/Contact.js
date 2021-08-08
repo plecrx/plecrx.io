@@ -37,7 +37,7 @@ export default function Contact() {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.7)" }}
-                        src="https://www.google.com/maps/place/64+Rue+Alfred+de+Musset,+91400+Orsay/@48.7028524,2.2006222,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6789eade1d4d7:0x88fdb67cf35d4a41!8m2!3d48.7028489!4d2.2028109"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.137704972531!2d2.2006222156688873!3d48.70284887927257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6789eade1d4d7%3A0x88fdb67cf35d4a41!2s64%20Rue%20Alfred%20de%20Musset%2C%2091400%20Orsay!5e0!3m2!1sfr!2sfr!4v1628420620357!5m2!1sfr!2sfr"
                     />
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
                         <div className="lg:w-1/2 px-6">
