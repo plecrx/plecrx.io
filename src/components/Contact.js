@@ -26,6 +26,7 @@ export default function Contact() {
 
     return (
         <section id="contact" className="relative">
+
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe
@@ -37,15 +38,15 @@ export default function Contact() {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.7)" }}
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.137704972531!2d2.2006222156688873!3d48.70284887927257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6789eade1d4d7%3A0x88fdb67cf35d4a41!2s64%20Rue%20Alfred%20de%20Musset%2C%2091400%20Orsay!5e0!3m2!1sfr!2sfr!4v1628420620357!5m2!1sfr!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42134.95469018699!2d2.154585548038101!3d48.69717239592561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d61d986b35cd%3A0x40b82c3688b4300!2s91400%20Orsay!5e0!3m2!1sfr!2sfr!4v1628891080071!5m2!1sfr!2sfr"
                     />
-                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-                        <div className="lg:w-1/2 px-6">
+
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md grid gap-0 grid-cols-2">
+                        <div className="lg:w-25 px-6">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 ADDRESS
                             </h2>
                             <p className="mt-1">
-                                64 Rue Alfred de Musset <br />
                                 Orsay, 91400
                             </p>
                         </div>
@@ -54,7 +55,7 @@ export default function Contact() {
                                 EMAIL
                             </h2>
                             <a className="text-indigo-400 leading-relaxed">
-                                prescilla.lecurieux@gmail.com
+                                prescilla@plecrx.io
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                                 PHONE
@@ -63,18 +64,17 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
+
+
                 <form
                     netlify
                     name="contact"
                     onSubmit={handleSubmit}
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-                        Hire Me
+                        Me contacter
                     </h2>
-                    <p className="leading-relaxed mb-5">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                        suscipit officia aspernatur veritatis. Asperiores, aliquid?
-                    </p>
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
                             Name

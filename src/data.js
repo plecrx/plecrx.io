@@ -35,19 +35,13 @@ export const projects = [
 
 export const testimonials = [
   {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
-    company: "Zoozle",
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
-    company: "Dooble.io",
-  },
+    quote: "Prescilla a eu une très bonne analyse des solutions à entreprendre pour résoudre un problème client. Elle développe une forte empathie avec ces interlocuteurs et agit avec conviction pour avancer des solutions techniques. Elle contrôle ses résultats pour pouvoir améliorer son résultat.",
+    transformation: "transform scale-110 -rotate-6",
+    image: "1516256223361.jpg",
+    name: "Jean-Pierre Delouche",
+    role: "Continuous Integration Manager",
+    company: "Nokia, ASN",
+  }
 ];
 
 export const skills = [
