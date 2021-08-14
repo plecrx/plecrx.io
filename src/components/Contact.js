@@ -41,8 +41,8 @@ export default function Contact() {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42134.95469018699!2d2.154585548038101!3d48.69717239592561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d61d986b35cd%3A0x40b82c3688b4300!2s91400%20Orsay!5e0!3m2!1sfr!2sfr!4v1628891080071!5m2!1sfr!2sfr"
                     />
 
-                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md grid gap-0 grid-cols-2">
-                        <div className="lg:w-25 px-6">
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+                        <div className="px-6">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 ADDRESS
                             </h2>
@@ -50,7 +50,7 @@ export default function Contact() {
                                 Orsay, 91400
                             </p>
                         </div>
-                        <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <div className="px-6 mt-4 lg:mt-0">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 EMAIL
                             </h2>

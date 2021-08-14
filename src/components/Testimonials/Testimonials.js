@@ -14,7 +14,7 @@ export default function Testimonials() {
                 <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
                     Témoignages
                 </h1>
-                <div className="grid mx-80 flex-grow">
+                <div className="flex flex-wrap m-15">
                     {testimonials.map((testimonial) => (
                         <Testimonial testimonial={testimonial}/>
                     ))}
