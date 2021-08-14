@@ -5,8 +5,8 @@ import {FaLinkedin, FaGithubSquare, FaFacebookSquare, FaQuora, FaStackOverflow, 
 
 export default function Home() {
     return (
-        <section id="home" className="xl:my-10">
-            <div className="container mx-auto my-auto flex px-10 py-20 md:flex-row flex-col items-center">
+        <section id="home" className="lg:h-screen">
+            <div className="container mx-auto my-auto px-10 py-20 flex md:flex-row flex-col flex-col-reverse items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font lg:text-3xl text-base font-medium text-white flex flex-col md:flex-row m-4" >
                         <div className="lg:mr-4 mr-0 lg:text-3xl text-base">Bonjour, je suis</div>
@@ -54,7 +54,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-1/3">
                     <img
                         className="object-cover object-center rounded"
                         alt="hero"
@@ -62,7 +62,7 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <svg className="animate-bounce w-10 h-10 mx-auto lg:my-10 xl:my-0">
+            <svg className="animate-bounce w-10 h-20 mx-auto absolute inset-x-0 bottom-0">
                 <a href="#about">
                     <FaArrowDown color={"white"} size={"2em"} />
                 </a>
