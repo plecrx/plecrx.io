@@ -1,15 +1,16 @@
 
 import React from "react";
 import Typewriter from "typewriter-effect";
-import {FaLinkedin, FaGithubSquare, FaFacebookSquare, FaQuora, FaStackOverflow, FaArrowDown} from 'react-icons/fa';
+import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
+import {BsFileArrowDown, FiMail} from "react-icons/all";
 
 export default function Home() {
     return (
-        <section id="home" className="lg:h-screen">
-            <div className="container mx-auto my-auto px-10 py-20 flex md:flex-row flex-col flex-col-reverse items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font lg:text-3xl text-base font-medium text-white flex flex-col md:flex-row m-4" >
-                        <div className="lg:mr-4 mr-0 lg:text-3xl text-base">Bonjour, je suis</div>
+        <section id="home" className="h-screen">
+            <div className="container mx-auto my-auto px-10 py-20 flex lg:flex-row flex-col flex-col-reverse items-center">
+                <div className="flex-grow sm:w-1/2 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 className="title-font lg:text-3xl md:text-lg text-base font-medium text-white flex flex-col lg:flex-row m-4" >
+                        <div className="lg:mr-4 md:mr-3 mr-0">Bonjour, je suis</div>
 
                         <Typewriter onInit={(typewriter)=> {
                                 typewriter
@@ -35,14 +36,8 @@ export default function Home() {
                         <a href={"https://github.com/plecurie"}>
                             <FaGithubSquare color={"white"} size={"2em"} />
                         </a>
-                        <a href={"https://github.com/plecurie"}>
-                            <FaFacebookSquare color={"white"} size={"2em"} />
-                        </a>
-                        <a href={"https://github.com/plecurie"}>
-                            <FaQuora color={"white"} size={"2em"} />
-                        </a>
-                        <a href={"https://github.com/plecurie"}>
-                            <FaStackOverflow color={"white"} size={"2em"} />
+                        <a href={"mailto:prescilla@plecrx.io"}>
+                            <FiMail color={"white"} size={"2em"} />
                         </a>
                     </div>
 
@@ -54,7 +49,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-1/3">
+                <div className="lg:max-w-lg xl:w-full w-1/4">
                     <img
                         className="object-cover object-center rounded"
                         alt="hero"
@@ -62,9 +57,9 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <svg className="animate-bounce w-10 h-20 mx-auto absolute inset-x-0 bottom-0">
+            <svg className="animate-bounce w-10 h-10 mx-auto absolute inset-x-0 bottom-5">
                 <a href="#about">
-                    <FaArrowDown color={"white"} size={"2em"} />
+                    <BsFileArrowDown color={"white"} size={"2em"} />
                 </a>
             </svg>
         </section>
