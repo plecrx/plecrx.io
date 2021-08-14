@@ -8,8 +8,8 @@ export default function Home() {
         <section id="home" className="xl:my-10">
             <div className="container mx-auto my-auto flex px-10 py-20 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font lg:text-3xl text-base font-medium text-white flex flex-wrap m-4 break-normal md:break-all" >
-                        <div className="lg:mr-4 mr-2 lg:text-3xl text-base">Bonjour, je suis</div>
+                    <h1 className="title-font lg:text-3xl text-base font-medium text-white flex flex-col md:flex-row m-4" >
+                        <div className="lg:mr-4 mr-0 lg:text-3xl text-base">Bonjour, je suis</div>
 
                         <Typewriter onInit={(typewriter)=> {
                                 typewriter
