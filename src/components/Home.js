@@ -9,7 +9,7 @@ export default function Home() {
         <section id="home" className="h-screen">
             <div className="container mx-auto my-auto px-10 py-20 flex lg:flex-row flex-col flex-col-reverse items-center">
                 <div className="flex-grow sm:w-1/2 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font lg:text-3xl md:text-lg text-base font-medium text-white flex flex-col lg:flex-row m-4" >
+                    <h1 className="title-font lg:text-3xl md:text-base text-base font-medium text-white flex flex-col lg:flex-row m-4" >
                         <div className="lg:mr-4 md:mr-3 mr-0">Bonjour, je suis</div>
 
                         <Typewriter onInit={(typewriter)=> {
