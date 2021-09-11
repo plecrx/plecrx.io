@@ -6,10 +6,10 @@ import {BsFileArrowDown, FiMail} from "react-icons/all";
 
 export default function Home() {
     return (
-        <section id="home" className="h-screen">
-            <div className="container mx-auto my-auto px-10 py-20 flex lg:flex-row flex-col flex-col-reverse items-center">
-                <div className="flex-grow sm:w-1/2 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font lg:text-3xl md:text-base text-base font-medium text-white flex flex-col lg:flex-row m-4" >
+        <section id="home" className="h-screen flex justify-center">
+            <div className="container my-20 flex lg:flex-row flex-col-reverse items-center absolute lg:bottom-auto bottom-7">
+                <div className="flex flex-col flex-grow lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
+                    <h1 className="flex flex-col lg:items-start items-center title-font xl:text-3xl text-2xl font-medium text-white m-5 mb-10" >
                         <div className="lg:mr-4 md:mr-3 mr-0">Bonjour, je suis</div>
 
                         <Typewriter onInit={(typewriter)=> {
@@ -29,15 +29,15 @@ export default function Home() {
                             }} options={{loop: true, autoStart: true}}
                         />
                     </h1>
-                    <div className={"flex items-stretch gap-3 ml-4"}>
-                        <a href={"https://www.linkedin.com/in/plecrx/"}>
-                            <FaLinkedin color={"white"} size={"2em"} />
+                    <div className="flex items-stretch gap-3 ml-4">
+                        <a href="https://www.linkedin.com/in/plecrx/">
+                            <FaLinkedin color="white" size="2em" />
                         </a>
-                        <a href={"https://github.com/plecurie"}>
-                            <FaGithubSquare color={"white"} size={"2em"} />
+                        <a href="https://github.com/plecurie">
+                            <FaGithubSquare color="white" size="2em" />
                         </a>
-                        <a href={"mailto:prescilla@plecrx.io"}>
-                            <FiMail color={"white"} size={"2em"} />
+                        <a href="mailto:prescilla@plecrx.io">
+                            <FiMail color="white" size="2em" />
                         </a>
                     </div>
 
@@ -49,9 +49,8 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="lg:max-w-lg xl:w-full w-1/4">
+                <div className="w-1/2 md:1/3 flex justify-center z-0">
                     <img
-                        className="object-cover object-center rounded"
                         alt="hero"
                         src="./bitmoji.png"
                     />
@@ -59,7 +58,7 @@ export default function Home() {
             </div>
             <svg className="animate-bounce w-10 h-10 mx-auto absolute inset-x-0 bottom-5">
                 <a href="#about">
-                    <BsFileArrowDown color={"white"} size={"2em"} />
+                    <BsFileArrowDown color="white" size="2em" />
                 </a>
             </svg>
         </section>
