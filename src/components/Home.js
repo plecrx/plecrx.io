@@ -7,9 +7,9 @@ import {BsFileArrowDown, FiMail} from "react-icons/all";
 export default function Home() {
     return (
         <section id="home" className="h-screen flex justify-center">
-            <div className="container my-20 flex lg:flex-row flex-col-reverse items-center absolute lg:bottom-auto bottom-7">
+            <div className="container my-20 flex lg:flex-row flex-col-reverse items-center absolute lg:bottom-auto bottom-5">
                 <div className="flex flex-col flex-grow lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
-                    <h1 className="flex flex-col lg:items-start items-center title-font xl:text-3xl sm:text-2xl text-xl font-medium text-white m-5 mb-10" >
+                    <h1 className="flex flex-col lg:items-start items-center title-font xl:text-3xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
                         <div className="lg:mr-4 md:mr-3 mr-0">Bonjour, je suis</div>
 
                         <Typewriter onInit={(typewriter)=> {
@@ -49,7 +49,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="w-1/2 flex justify-center z-0">
+                <div className="w-1/2 flex justify-center z-10">
                     <img
                         alt="hero"
                         src="./bitmoji.png"
