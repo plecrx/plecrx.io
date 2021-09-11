@@ -14,16 +14,16 @@ export default function Home() {
 
                         <Typewriter onInit={(typewriter)=> {
                                 typewriter
-                                    .typeString("<strong><label class='text-green-500'>Prescilla.</label></strong>")
+                                    .typeString("<strong><label class='text-green-500'>Prescilla</label></strong>")
                                     .pauseFor(1000)
                                     .deleteAll()
-                                    .typeString("<strong><label class='text-blue-500'>Développeuse Frontend.</label></strong>")
+                                    .typeString("<strong><label class='text-blue-500'>Développeuse Frontend</label></strong>")
                                     .pauseFor(1000)
                                     .deleteAll()
-                                    .typeString("<strong><label class='text-pink-500'>Développeuse Backend.</label></strong>")
+                                    .typeString("<strong><label class='text-pink-500'>Développeuse Backend</label></strong>")
                                     .pauseFor(1000)
                                     .deleteAll()
-                                    .typeString("<strong><label class='text-yellow-400'>Développeuse Mobile.</label></strong>")
+                                    .typeString("<strong><label class='text-yellow-400'>Développeuse Mobile</label></strong>")
                                     .pauseFor(1000)
                                     .start();
                             }} options={{loop: true, autoStart: true}}
