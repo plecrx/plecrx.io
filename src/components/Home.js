@@ -49,7 +49,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="w-1/2 flex justify-center z-10">
+                <div className="w-1/2 flex justify-center z-0">
                     <img
                         alt="hero"
                         src="./bitmoji.png"
