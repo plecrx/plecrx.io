@@ -1,4 +1,3 @@
-
 import React from "react";
 import Typewriter from "typewriter-effect";
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
@@ -49,7 +48,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="w-1/2 flex justify-center z-0">
+                <div className="w-1/2 flex justify-center">
                     <img
                         alt="hero"
                         src="./bitmoji.png"

@@ -1,47 +1,42 @@
-import React from "react";
-import {GiHamburgerMenu} from "react-icons/all";
+import React, {useEffect, useState} from "react";
+import './Navbar.css'
 
-export default function Navbar() {
-    /*    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+const Navbar = () => {
 
-        const handleResize  = useCallback(() => {
-            setWindowWidth(window.innerWidth)
-        }, []);
+    const [isActive, setIsActive] = useState(false);
+    const [showMenu, setShowMenu] = useState(false);
 
-        useEffect(() => {
-            window.addEventListener('resize', handleResize );
-            return () => {
-                window.removeEventListener('resize', handleResize );
-          };
-        }, [handleResize]);
+    useEffect(() => {
+        setShowMenu(isActive)
+    }, [isActive])
 
-    /*    const items = [
-            {title: "A propos", href: "#about"},
-            {title: "Projets", href: "#projects"},
-            {title: "Compétences", href: "#skills"},
-            {title: "Témoignages", href: "#testimonials"}
-        ]
-
-        const menu = (
-            <div className="lg:mr-auto lg:ml-4 lg:py-1 lg:pl-4 lg:border-l lg:border-none flex flex-col lg:flex-row items-center text-lg space-y-4 lg:space-y-0 pb-3">
-                {items.map((item, id) => (
-                    <a key={id} href={item.href} className="mr-5 hover:text-white">
-                        {item.title}
-                    </a>
-                ))}
-            </div>
-        )*/
+    const handleToggle = () => {
+        setIsActive(!isActive)
+    }
 
     return (
-        <header className="bg-gray-800 sticky top-0 z-10 mb-4">
-            <div className="container mx-auto ">
-                <div className="md:mt-0 flex flex justify-between p-5 md:flex-row">
-                    <a href="#home" className="title-font font-medium text-white md:mb-0 ml-3 text-xl text-green-500 font-bold">
-                        Prescilla Lecurieux
-                    </a>
-                    <GiHamburgerMenu className="w-6 h-6 green-600"/>
+        <div className="bg-gray-1000 bg-opacity-10 sticky top-0 z-10">
+            <div className="p-5 absolute top-0 right-0">
+                <div id="nav-icon1" className={isActive ? "open" : ""} onClick={handleToggle}>
+                    <span/>
+                    <span/>
+                    <span/>
                 </div>
             </div>
-        </header>
-    );
+            <body className={showMenu ? "nav-active" : "nav"}>
+                <div className="nav">
+                    <div className="nav__content">
+                        <ul className="nav__list">
+                            <li className="nav__list-item active-nav"><a href="#" className="hover-target">home</a></li>
+                            <li className="nav__list-item"><a href="#" className="hover-target">studio</a></li>
+                            <li className="nav__list-item"><a href="#" className="hover-target">news</a></li>
+                            <li className="nav__list-item"><a href="#" className="hover-target">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </body>
+        </div>
+    )
 }
+
+export default Navbar

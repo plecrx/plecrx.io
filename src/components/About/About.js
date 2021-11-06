@@ -25,7 +25,7 @@ const About = () => {
     const classes = useStyles();
 
     return (
-        <section id="about" className="text-gray-400 bg-gray-900 body-font">
+        <section id="about">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
                 <div className="flex flex-col w-full mb-20">
                     <AnnotationIcon className="mx-auto inline-block w-10 mb-4" />
@@ -140,6 +140,13 @@ const About = () => {
                                         <br/>
                                         <Typography variant="h6" component="h1" color="secondary">
                                             Apprentissage chez Nokia
+                                        </Typography>
+                                        <Typography>
+                                            En parallèle, j'ai collaboré durant quatre ans en tant qu'apprentie ingénieure logiciel avec le leader mondial du câble optique sous-marin, Nokia.
+                                        </Typography>
+                                        <br/>
+                                        <Typography variant="h6" component="h1" color="secondary">
+                                            Mission chez Scala Patrimoine
                                         </Typography>
                                         <Typography>
                                             En parallèle, j'ai collaboré durant quatre ans en tant qu'apprentie ingénieure logiciel avec le leader mondial du câble optique sous-marin, Nokia.
