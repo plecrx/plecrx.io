@@ -8,21 +8,21 @@ export default function Home() {
         <section id="home" className="h-screen flex justify-center">
             <div className="container my-20 flex lg:flex-row flex-col-reverse items-center absolute lg:bottom-auto bottom-5">
                 <div className="flex flex-col flex-grow lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
-                    <h1 className="flex flex-col lg:items-start items-center title-font xl:text-3xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
-                        <div className="lg:mr-4 md:mr-3 mr-0">Bonjour, je suis</div>
+                    <h1 className="flex flex-col lg:items-start items-center title-font xl:text-5xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
+                        <div className="md:mr-3 mr-0">Bonjour, je suis</div>
 
                         <Typewriter onInit={(typewriter)=> {
                                 typewriter
-                                    .typeString("<strong><label class='text-green-500'>Prescilla</label></strong>")
+                                    .typeString("<strong><label class='text-yellow-600'>Prescilla</label></strong>")
                                     .pauseFor(1000)
                                     .deleteAll()
-                                    .typeString("<strong><label class='text-blue-500'>Développeuse Frontend</label></strong>")
+                                    .typeString("<strong><label class='text-yellow-600'>Développeuse Frontend</label></strong>")
                                     .pauseFor(1000)
                                     .deleteAll()
-                                    .typeString("<strong><label class='text-pink-500'>Développeuse Backend</label></strong>")
+                                    .typeString("<strong><label class='text-yellow-600'>Développeuse Backend</label></strong>")
                                     .pauseFor(1000)
                                     .deleteAll()
-                                    .typeString("<strong><label class='text-yellow-400'>Développeuse Mobile</label></strong>")
+                                    .typeString("<strong><label class='text-yellow-600'>Développeuse Mobile</label></strong>")
                                     .pauseFor(1000)
                                     .start();
                             }} options={{loop: true, autoStart: true}}
@@ -43,12 +43,12 @@ export default function Home() {
                     <div className="flex justify-center ml-4 mt-10">
                         <a
                             href="#contact"
-                            className="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 rounded text-lg">
+                            className="inline-flex text-white bg-yellow-800 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-700 rounded text-lg">
                             Télécharger CV
                         </a>
                     </div>
                 </div>
-                <div className="w-1/2 flex justify-center">
+                <div className={"ml-20 mr-40"}>
                     <img
                         alt="hero"
                         src="./bitmoji.png"

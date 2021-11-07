@@ -14,28 +14,35 @@ const Navbar = () => {
         setIsActive(!isActive)
     }
 
+    const handleMenuItemClick = () => {
+        setIsActive(!isActive)
+    }
+
     return (
-        <div className="bg-gray-1000 bg-opacity-10 sticky top-0 z-10">
-            <div className="p-5 absolute top-0 right-0">
-                <div id="nav-icon1" className={isActive ? "open" : ""} onClick={handleToggle}>
+        <div className="z-10">
+            <div className="hamburger-wrapper">
+                <div id="hamburger" className={isActive ? "open" : ""} onClick={handleToggle}>
                     <span/>
                     <span/>
                     <span/>
                 </div>
             </div>
-            <body className={showMenu ? "nav-active" : "nav"}>
+
+            <div id="menu" className={showMenu ? "nav-active" : "nav"}>
                 <div className="nav">
                     <div className="nav__content">
                         <ul className="nav__list">
-                            <li className="nav__list-item active-nav"><a href="#" className="hover-target">home</a></li>
-                            <li className="nav__list-item"><a href="#" className="hover-target">studio</a></li>
-                            <li className="nav__list-item"><a href="#" className="hover-target">news</a></li>
-                            <li className="nav__list-item"><a href="#" className="hover-target">contact</a></li>
+                            <li className="nav__list-item active-nav"><a href="#home" className="hover-target" onClick={handleMenuItemClick}>Home</a></li>
+                            <li className="nav__list-item"><a href="#about" className="hover-target" onClick={handleMenuItemClick}>About</a></li>
+                            <li className="nav__list-item"><a href="#projects" className="hover-target" onClick={handleMenuItemClick}>Projects</a></li>
+                            <li className="nav__list-item"><a href="#skills" className="hover-target" onClick={handleMenuItemClick}>Skills</a></li>
+                            <li className="nav__list-item"><a href="#contact" className="hover-target" onClick={handleMenuItemClick}>Contact</a></li>
                         </ul>
                     </div>
                 </div>
-            </body>
+            </div>
         </div>
+
     )
 }
 

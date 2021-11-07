@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css'
 import Home from "./Home/Home";
 import Contact from "./Contact/Contact";
 import Navbar from "./Navbar/Navbar";
@@ -9,8 +10,9 @@ import About from "./About/About";
 
 export default function App() {
   return (
-      <main className="text-gray-400 bg-gray-800 bg-opacity-9 body-font font-mono">
+      <main className="text-gray-400 body-font font-mono">
         <Navbar />
+
         <Home />
         <About/>
         <Projects />

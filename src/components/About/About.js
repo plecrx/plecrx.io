@@ -13,12 +13,21 @@ import FastfoodIcon from '@material-ui/icons/Fastfood';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
+    timeline: {
+        transform: "translateX(-25%)"
+    },
     paper: {
         padding: '6px 16px',
     },
-    secondaryTail: {
-        backgroundColor: theme.palette.secondary.main,
+    tail: {
+        backgroundColor: "#d3531a",
     },
+    dot: {
+        backgroundColor: "#d3531a"
+    },
+    title: {
+        color: "#d3531a"
+    }
 }));
 
 const About = () => {
@@ -33,7 +42,7 @@ const About = () => {
                         A propos de moi
                     </h1>
 
-                    <Timeline style={{transform: "translateX(-25%)"}}>
+                    <Timeline className={classes.timeline}>
                         <TimelineItem>
                             <TimelineOppositeContent>
                                 <Typography variant="body2">
@@ -41,15 +50,15 @@ const About = () => {
                                 </Typography>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineDot color="secondary">
+                                <TimelineDot className={classes.dot}>
                                     <FastfoodIcon />
                                 </TimelineDot>
-                                <TimelineConnector className={classes.secondaryTail} />
+                                <TimelineConnector className={classes.tail} />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className="p-4 w-full rounded-2xl ">
-                                    <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                                    <Typography variant="h6" component="h1" color="secondary">
+                                    <div className="h-full bg-gray-500 bg-opacity-20 p-8 rounded">
+                                    <Typography variant="h6" component="h1" className={classes.title}>
                                         Carrière sportive internationale
                                     </Typography>
                                     <Typography>
@@ -69,15 +78,15 @@ const About = () => {
                                 </Typography>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineDot color="secondary">
+                                <TimelineDot className={classes.dot}>
                                     <FastfoodIcon />
                                 </TimelineDot>
-                                <TimelineConnector className={classes.secondaryTail}/>
+                                <TimelineConnector className={classes.tail}/>
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className="p-4 w-full rounded-2xl ">
-                                    <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                                        <Typography variant="h6" component="h1" color="secondary">
+                                    <div className="h-full bg-gray-500 bg-opacity-20 p-8 rounded">
+                                        <Typography variant="h6" component="h1" className={classes.title}>
                                             Double projet "sport-études" à l'INSEP
                                         </Typography>
                                         <Typography>
@@ -87,7 +96,7 @@ const About = () => {
                                             Je n'avais absolument pas pensé à l'énergie nécessaire pour enseigner le sport à des enfants qui préféraient s'amuser à leur manière ^^'
                                         </Typography>
                                         <br/>
-                                        <Typography variant="h6" component="h1" color="secondary">
+                                        <Typography variant="h6" component="h1" className={classes.title}>
                                             Réorientation en BTS informatique
                                         </Typography>
                                         <Typography>
@@ -106,15 +115,15 @@ const About = () => {
                                 </Typography>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineDot color="secondary">
+                                <TimelineDot className={classes.dot}>
                                     <FastfoodIcon />
                                 </TimelineDot>
-                                <TimelineConnector className={classes.secondaryTail}/>
+                                <TimelineConnector className={classes.tail}/>
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className="p-4 w-full rounded-2xl ">
-                                    <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                                        <Typography variant="h6" component="h1" color="secondary">
+                                    <div className="h-full bg-gray-500 bg-opacity-20 p-8 rounded">
+                                        <Typography variant="h6" component="h1" className={classes.title}>
                                             Formation en école d'ingénieur
                                         </Typography>
                                         <Typography>
@@ -138,14 +147,14 @@ const About = () => {
                                             A la suite de ce projet de fin d'études, j'ai choisi de me spécialiser en développement fullstack typescript, et élargir mes horizons de développement.
                                         </Typography>
                                         <br/>
-                                        <Typography variant="h6" component="h1" color="secondary">
+                                        <Typography variant="h6" component="h1" className={classes.title}>
                                             Apprentissage chez Nokia
                                         </Typography>
                                         <Typography>
                                             En parallèle, j'ai collaboré durant quatre ans en tant qu'apprentie ingénieure logiciel avec le leader mondial du câble optique sous-marin, Nokia.
                                         </Typography>
                                         <br/>
-                                        <Typography variant="h6" component="h1" color="secondary">
+                                        <Typography variant="h6" component="h1" className={classes.title}>
                                             Mission chez Scala Patrimoine
                                         </Typography>
                                         <Typography>
@@ -162,15 +171,15 @@ const About = () => {
                                 </Typography>
                             </TimelineOppositeContent>
                             <TimelineSeparator>
-                                <TimelineDot color="secondary">
+                                <TimelineDot className={classes.dot}>
                                     <FastfoodIcon />
                                 </TimelineDot>
-                                <TimelineConnector className={classes.secondaryTail} />
+                                <TimelineConnector className={classes.tail} />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className="p-4 w-full rounded-2xl">
-                                    <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                                        <Typography variant="h6" component="h1" color="secondary">
+                                    <div className="h-full bg-gray-500 bg-opacity-20 p-8 rounded">
+                                        <Typography variant="h6" component="h1" className={classes.title}>
                                             Premier CDI chez Energisme
                                         </Typography>
                                         <Typography>

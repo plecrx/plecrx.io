@@ -1,6 +1,6 @@
 import React from "react";
 import {UsersIcon} from "@heroicons/react/solid";
-import { testimonials } from "../../data";
+import { testimonials } from "../../utils/data";
 import Testimonial from "./components/Testimonial";
 
 export default function Testimonials() {
