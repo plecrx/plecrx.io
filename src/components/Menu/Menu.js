@@ -37,6 +37,7 @@ const Menu = () => {
                             <li className="nav__list-item"><a href="#about" className="hover-target" onClick={handleMenuItemClick}>About</a></li>
                             <li className="nav__list-item"><a href="#projects" className="hover-target" onClick={handleMenuItemClick}>Projects</a></li>
                             <li className="nav__list-item"><a href="#skills" className="hover-target" onClick={handleMenuItemClick}>Skills</a></li>
+                            <li className="nav__list-item"><a href="#testimonials" className="hover-target" onClick={handleMenuItemClick}>Testimonials</a></li>
                             <li className="nav__list-item"><a href="#contact" className="hover-target" onClick={handleMenuItemClick}>Contact</a></li>
                         </ul>
                     </div>

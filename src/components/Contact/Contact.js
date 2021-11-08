@@ -29,6 +29,7 @@ export default function Contact() {
 
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+
                     <iframe
                         width="100%"
                         height="100%"
@@ -38,7 +39,7 @@ export default function Contact() {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.7)" }}
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42134.95469018699!2d2.154585548038101!3d48.69717239592561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5d61d986b35cd%3A0x40b82c3688b4300!2s91400%20Orsay!5e0!3m2!1sfr!2sfr!4v1628891080071!5m2!1sfr!2sfr"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42061.783144975736!2d2.417308467967548!3d48.784535345631674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60caf330272df%3A0x4573b9315445d467!2zQ3LDqXRlaWw!5e0!3m2!1sfr!2sfr!4v1636374376272!5m2!1sfr!2sfr"
                     />
 
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
@@ -47,7 +48,7 @@ export default function Contact() {
                                 ADDRESS
                             </h2>
                             <p className="mt-1">
-                                Orsay, 91400
+                                Créteil, 94000
                             </p>
                         </div>
                         <div className="px-6 mt-4 lg:mt-0">
@@ -83,7 +84,7 @@ export default function Contact() {
                             type="text"
                             id="name"
                             name="name"
-                            className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full bg-gray-500 bg-opacity-20 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             onChange={(e) => setName(e.target.value)}
                         />
                     </div>
@@ -95,7 +96,7 @@ export default function Contact() {
                             type="email"
                             id="email"
                             name="email"
-                            className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full bg-gray-500 bg-opacity-20 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
@@ -108,13 +109,13 @@ export default function Contact() {
                         <textarea
                             id="message"
                             name="message"
-                            className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                            className="w-full bg-gray-500 bg-opacity-20 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </div>
                     <button
                         type="submit"
-                        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                        className="text-white bg-yellow-700 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                         Submit
                     </button>
                 </form>

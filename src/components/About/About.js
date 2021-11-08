@@ -14,7 +14,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     timeline: {
-        transform: "translateX(-25%)"
+        transform: "translateX(-50%)",
+        width: "150rem"
     },
     paper: {
         padding: '6px 16px',
@@ -180,7 +181,7 @@ const About = () => {
                                 <div className="p-4 w-full rounded-2xl">
                                     <div className="h-full bg-gray-500 bg-opacity-20 p-8 rounded">
                                         <Typography variant="h6" component="h1" className={classes.title}>
-                                            Premier CDI chez Energisme
+                                            Nouveau projet chez Energisme
                                         </Typography>
                                         <Typography>
                                             A suivre...

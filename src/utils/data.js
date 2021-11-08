@@ -41,7 +41,15 @@ export const testimonials = [
     name: "Jean-Pierre Delouche",
     role: "Continuous Integration Manager",
     company: "Nokia, ASN",
-  }
+  },
+  {
+    quote: "Prescilla est partie en éclaireuse sur la stack Node/React/Kubernetes chez Energisme et a fortement contribué à structurer à la fois les développements chez PDA ainsi que la manière d’opérer les déploiements coté DevOPS. Elle a développé et déployé la première application en interne Energisme.",
+    transformation: "transform scale-110 -rotate-6",
+    image: "1516256223362.jpg",
+    name: "Damien Deom",
+    role: "Team Lead PDA Solutions",
+    company: "Energisme",
+  },
 ];
 
 export const skills = [
