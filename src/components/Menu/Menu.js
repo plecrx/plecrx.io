@@ -18,20 +18,18 @@ const Menu = () => {
         setIsActive(!isActive)
     }
 
-    const hamburgerClassName = isActive ? "open" : ""
-    const menuClassName = showMenu ? "nav-active" : "nav"
 
     return (
         <div className="z-10">
             <div className="hamburger-wrapper p-0.5 lg:p-5">
-                <div id="hamburger" className={hamburgerClassName} onClick={handleToggle}>
+                <div id="hamburger" className={isActive ? "open" : ""} onClick={handleToggle}>
                     <span/>
                     <span/>
                     <span/>
                 </div>
             </div>
 
-            <div id="menu" className={menuClassName}>
+            <div id="menu" className={showMenu ? "nav-active" : "nav"}>
                 <div className="nav">
                     <div className="nav__content">
                         <ul className="nav__list">
