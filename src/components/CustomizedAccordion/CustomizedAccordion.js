@@ -29,7 +29,6 @@ const AccordionSummary = withStyles({
     root: {
         borderRadius: "2em",
         borderBottom: '1px solid #212226',
-        marginInline: "-2em",
         backgroundColor: "#2f3238",
         marginBottom: -1,
         minHeight: 56,
@@ -49,7 +48,7 @@ const AccordionDetails = withStyles((theme) => ({
     root: {
         padding: theme.spacing(2),
         backgroundColor: '#D1D5DB',
-        margin: '5px'
+        marginInline: '2em'
     },
 }))(MuiAccordionDetails);
 

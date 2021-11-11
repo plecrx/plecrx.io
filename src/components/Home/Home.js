@@ -6,9 +6,9 @@ import {BsFileArrowDown, FiMail} from "react-icons/all";
 export default function Home() {
     return (
         <section id="home" className="h-screen flex justify-center">
-            <div className="container xl:my-20 mb-20 flex lg:flex-row flex-col-reverse items-center absolute lg:bottom-auto bottom-5">
+            <div className="container absolute top-40 xl:top-20 mb-20 flex lg:flex-row flex-col-reverse items-center lg:bottom-auto bottom-5 my:auto">
                 <div className="flex flex-col flex-grow lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
-                    <h1 className="flex flex-col lg:items-start items-center title-font xl:text-5xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
+                    <h1 className="flex flex-col lg:items-start items-center title-font xl:text-xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
                         <div className="md:mr-3 mr-0">Bonjour, je suis</div>
 
                         <Typewriter onInit={(typewriter)=> {
