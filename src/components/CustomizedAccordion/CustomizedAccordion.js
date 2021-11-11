@@ -5,11 +5,13 @@ import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import {fontFamily} from "tailwindcss/lib/plugins";
 
 const Accordion = withStyles({
     root: {
+        backgroundColor: "#212226",
+        border: '1px solid #212226',
         boxShadow: 'none',
+        borderRadius: "3em",
         '&:not(:last-child)': {
             borderBottom: 0,
         },
@@ -25,6 +27,9 @@ const Accordion = withStyles({
 
 const AccordionSummary = withStyles({
     root: {
+        borderRadius: "2em",
+        borderBottom: '1px solid #212226',
+        marginInline: "-2em",
         backgroundColor: "#2f3238",
         marginBottom: -1,
         minHeight: 56,
@@ -43,7 +48,8 @@ const AccordionSummary = withStyles({
 const AccordionDetails = withStyles((theme) => ({
     root: {
         padding: theme.spacing(2),
-        backgroundColor: '#D1D5DB'
+        backgroundColor: '#D1D5DB',
+        margin: '5px'
     },
 }))(MuiAccordionDetails);
 
@@ -59,7 +65,7 @@ const CustomizedAccordion = (props) => {
             {props.data.map((input, i) => (
                 <Accordion expanded={expanded === i} onChange={() => handleChange(i)}>
                     <AccordionSummary expandIcon={<ExpandMoreIcon className="text-yellow-700"/>}>
-                        <Typography style={{fontFamily: 'Ubuntu Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'}} className="text-gray-400">{input.title}</Typography>
+                        <Typography style={{marginInline: "auto", fontFamily: 'Ubuntu Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'}} className="text-gray-400">{input.title}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography style={{fontFamily: 'Ubuntu Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'}}>{input.details}</Typography>
