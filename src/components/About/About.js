@@ -1,6 +1,6 @@
 import React from 'react'
 import {AnnotationIcon} from "@heroicons/react/solid";
-import CustomizedAccordion from '../CustomizedAccordion/CustomizedAccordion'
+import CustomizedAccordion from './components/CustomizedAccordion/CustomizedAccordion'
 import { about } from "../../utils/data";
 
 const About = () => {
