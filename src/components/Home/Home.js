@@ -48,7 +48,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className={"mx-auto lg:ml-20 lg:mr-40 w-1/5 sm:1/4 md:1/3 lg:1/2"}>
+                <div className={"mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2"}>
                     <img
                         alt="hero"
                         src="./bitmoji.png"

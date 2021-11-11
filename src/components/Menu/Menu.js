@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import './Menu.css'
+import {Button} from "@material-ui/core";
 
 const Menu = () => {
 
@@ -18,15 +19,16 @@ const Menu = () => {
         setIsActive(!isActive)
     }
 
-
     return (
         <div className="z-10">
-            <div className="hamburger-wrapper p-0.5 lg:p-5">
-                <div id="hamburger" className={isActive ? "open" : ""} onClick={handleToggle}>
-                    <span/>
-                    <span/>
-                    <span/>
-                </div>
+            <div className="hamburger-wrapper p-0.5 lg:p-5 transform scale-50 xl:scale-75">
+                <Button style={{backgroundColor: "black", borderRadius: "30em", opacity: "0.8"}}>
+                    <div id="hamburger" className={isActive ? "open" : ""} onClick={handleToggle}>
+                        <span/>
+                        <span/>
+                        <span/>
+                    </div>
+                </Button>
             </div>
 
             <div id="menu" className={showMenu ? "nav-active" : "nav"}>
