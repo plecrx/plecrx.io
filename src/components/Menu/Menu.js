@@ -22,7 +22,7 @@ const Menu = () => {
     return (
         <div className="z-10">
             <div className="hamburger-wrapper p-0.5 lg:p-5 transform scale-50 xl:scale-75">
-                <Button style={{backgroundColor: "black", borderRadius: "30em", opacity: "0.8"}}>
+                <Button style={{backgroundColor: "black", borderRadius: "30em", opacity: "0.8", borderColor: 'transparent'}}>
                     <div id="hamburger" className={isActive ? "open" : ""} onClick={handleToggle}>
                         <span/>
                         <span/>
