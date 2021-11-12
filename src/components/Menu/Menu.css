@@ -29,9 +29,8 @@
     position: absolute;
     height: 5px;
     width: 100%;
-    background: #d3531a;
+    background: #B45309;
     border-radius: 9px;
-    opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -141,8 +140,6 @@
     -webkit-transform: translate(100px, 0%);
     transform: translate(100px, 0%);
     -webkit-transition: opacity .2s ease, -webkit-transform .3s ease;
-    transition: opacity .2s ease, -webkit-transform .3s ease;
-    transition: opacity .2s ease, transform .3s ease;
     transition: opacity .2s ease, transform .3s ease, -webkit-transform .3s ease;
     margin-top: 0;
     margin-bottom: 0;
@@ -150,7 +147,7 @@
 .nav__list-item a{
     position: relative;
     text-decoration: none;
-    color: rgba(255,255,255,0.6);
+    color: rgba(100,100,100,1);
     overflow: hidden;
     cursor: pointer;
     padding-left: 5px;
@@ -164,7 +161,7 @@
 .nav__list-item a:after{
     position: absolute;
     content: '';
-    top: 50%;
+    top: 99%;
     margin-top: -2px;
     left: 50%;
     width: 0;
@@ -176,22 +173,27 @@
     transition: all 200ms linear;
 }
 .nav__list-item a:hover:after{
-    height: 4px;
+    height: 5px;
+    border-radius: 9px;
     opacity: 1;
-    left: 0;
-    width: 100%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
 }
 .nav__list-item a:hover{
-    color: rgba(255,255,255,1);
+    color: rgba(255,255,255,0.6);
+    transform: scale(1.1);
 }
 .nav__list-item.active-nav a{
     color: rgba(255,255,255,1);
 }
 .nav__list-item.active-nav a:after{
-    height: 4px;
+    height: 5px;
+    border-radius: 9px;
     opacity: 1;
-    left: 0;
-    width: 100%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
 }
 #menu.nav-active .nav__content {
     visibility: visible;
@@ -236,10 +238,8 @@
     opacity: 1;
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
-    -webkit-transition: opacity .3s ease, color .3s ease, -webkit-transform .3s ease;
-    transition: opacity .3s ease, color .3s ease, -webkit-transform .3s ease;
-    transition: opacity .3s ease, transform .3s ease, color .3s ease;
-    transition: opacity .3s ease, transform .3s ease, color .3s ease, -webkit-transform .3s ease;
+    -webkit-transition: opacity .2s ease, color .3s ease, -webkit-transform .1s ease;
+    transition: opacity .3s ease, transform .3s ease, color .3s ease, -webkit-transform .1s ease;
 }
 #menu.nav-active .nav__list-item:nth-child(0) {
     -webkit-transition-delay: 0.7s;

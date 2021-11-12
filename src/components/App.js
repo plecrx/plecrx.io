@@ -9,17 +9,15 @@ import Testimonials from "./Testimonials/Testimonials";
 import About from "./About/About";
 
 export default function App() {
-  return (
+    return (
       <main className="text-gray-400 body-font font-mono">
         <Menu />
         <Home />
         <About/>
-{/*
         <Projects />
-*/}
         <Skills />
         <Testimonials />
         <Contact />
       </main>
-  );
+    );
 }

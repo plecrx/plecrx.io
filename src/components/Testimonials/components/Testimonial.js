@@ -26,10 +26,7 @@ const Testimonial = ({testimonial}) => {
                 </div>
 
                 <p className="leading-relaxed mb-6">
-                    <i className="fas fa-quote-left"/>
-                    <FontAwesomeIcon icon={faQuoteLeft} />
-                    { ` ${testimonial.quote} ` }
-                    <FontAwesomeIcon icon={faQuoteRight} />
+                    <FontAwesomeIcon icon={faQuoteLeft} />{ ` ${testimonial.quote} ` }<FontAwesomeIcon icon={faQuoteRight} />
                 </p>
             </div>
         </div>
