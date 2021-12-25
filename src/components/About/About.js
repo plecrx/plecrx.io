@@ -13,7 +13,7 @@ const About = () => {
                 <div className="text-center mb-20">
                     <AnnotationIcon className="w-10 inline-block mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-                        A propos de moi
+                        À propos de moi
                     </h1>
                 </div>
 

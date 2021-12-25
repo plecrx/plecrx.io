@@ -48,7 +48,9 @@ const AccordionDetails = withStyles((theme) => ({
     root: {
         padding: theme.spacing(2),
         backgroundColor: 'rgb(0, 0, 0, 0.2)',
-        marginInline: '2em'
+        marginInline: '2em',
+        display: "flex",
+        flexDirection: "column"
     },
 }))(MuiAccordionDetails);
 
@@ -66,8 +68,12 @@ const CustomizedAccordion = (props) => {
                     <AccordionSummary expandIcon={<ExpandMoreIcon className="text-yellow-700"/>}>
                         <Typography style={{marginInline: "auto", fontFamily: 'Ubuntu Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace', fontSize: "1.25em"}} className="text-gray-400">{input.title}</Typography>
                     </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography className={"text-white"} style={{fontFamily: 'ui-sans-serif, system-ui, "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>{input.details}</Typography>
+                    <AccordionDetails >
+                        {input.details.map(detail => (
+                            <Typography className={"text-white"} style={{fontFamily: 'ui-sans-serif, system-ui, "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>
+                                {detail}
+                            </Typography>
+                        ))}
                     </AccordionDetails>
                 </Accordion>
             ))}
