@@ -19,7 +19,7 @@ export default function Projects() {
                         <a
                             href={project.link}
                             key={project.image}
-                            className="lg:w-1/3 sm:w-1/2 w-10 p-2">
+                            className="lg:w-1/3 sm:w-1/2 w-100 p-2">
                             <div className="flex relative">
                                 <img
                                     alt="gallery"
