@@ -2,7 +2,7 @@ export const about = [
   {
     title: "Carrière sportive internationale",
     details: [
-        "[2011 - aujourd'hui] 🇫🇷 Détentrice du record de France junior",
+        "[2011 - aujourd'hui] 🇫🇷 Détentrice du record de France junior de lancer de javelot",
         "[2008 - 2014] 🥇- Championnats de France U18 | U20 | U23",
         "[2014] 🥉- Coupe d'Europe hivernale U23 (Leiria, Portugal)",
         "[2014] 🥈- Championnats Méditerrannéens U23 (Aubagne, France)",
@@ -39,7 +39,7 @@ export const about = [
         "C'est d'ailleurs la raison pour laquelle j'ai intégré l'ESGI, où il est demandé une forte autonomie et qui est plus axé sur la pratique que sur la théorie : " +
         "un projet thématique en équipe était requis pour chaque cours, en plus d'un projet annuel chaque année.",
         "Je me suis orientée en 'Mobilité et objets connectés', ce qui consiste à développer des applications mobiles et des infrastrutures IoT.",
-        "J'ai appris à développer et consommer des API sur divers appareils connectés (Android, Iphone, WatchOS, Raspberries, Arduino...). ",
+        "J'ai appris à développer et consommer des API sur divers appareils connectés (Android, Iphone, WatchOS, Raspberry, Arduino...). ",
     ]
   },
   {
@@ -92,38 +92,55 @@ export const about = [
 
 
 export const projects = [
-  {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
-  },
+    {
+        title: "Paris Taxi Flares",
+        subtitle: "MERN Stack",
+        description: "Display taxi rides considering night & busy periods fees.",
+        image: "./project-1.gif",
+        link: "https://reactbootcamp.com",
+    },
+    {
+        title: "Secured Bankin",
+        subtitle: "MERN Stack",
+        description: "Simulate bank transactions, inspired by Bankin' Bridge.",
+        image: "./project-4.gif",
+        link: "https://reactbootcamp.com",
+    },
+    {
+        title: "Motion Detection Invaders",
+        subtitle: "Python and P5.js",
+        description: "Custom spaceInvaders-like game controllable with motion detection",
+        image: "./project-3.gif",
+        link: "https://reactbootcamp.com",
+    },
+    {
+        title: "TripCar API",
+        subtitle: "MERN Stack",
+        description: "Blablacar-like project to simulate a ride between users.",
+        image: "./project-4.gif",
+        link: "https://reactbootcamp.com",
+    },
+    {
+        title: "Potter API",
+        subtitle: "React Native",
+        description: "Fetch Potter API and render on every mobile OS.",
+        image: "./project-1.gif",
+        link: "https://reactbootcamp.com",
+    },
+    {
+        title: "Buy A Pokemon",
+        subtitle: "MERN Stack",
+        description: "Amazon-like project to buy Pokémons.",
+        image: "./project-4.gif",
+        link: "https://reactbootcamp.com",
+    },
+    {
+        title: "SongNote",
+        subtitle: "React Native",
+        description: "Mobile App using dictaphone & song register.",
+        image: "./project-3.gif",
+        link: "https://reactbootcamp.com",
+    },
 ];
 
 export const testimonials = [
@@ -168,5 +185,4 @@ export const skills = [
   {name: "Storybook", logoLink: "https://iconape.com/wp-content/png_logo_vector/storybook.png"},
   {name: "Nx", logoLink: "https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png"},
   {name: "Tailwind", logoLink: "https://insy2s.com/insy2s/images/icones/Technos-Dev-Factory-logo-Tailwindcss.png"},
-
 ];
