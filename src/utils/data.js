@@ -97,7 +97,7 @@ export const projects = [
         subtitle: "MERN Stack",
         description: "Display taxi rides considering night & busy periods fees.",
         image: "./project-1.gif",
-        link: "https://reactbootcamp.com",
+        link: "https://paristaxiflares.plecrx.io/",
     },
     {
         title: "Secured Bankin",
