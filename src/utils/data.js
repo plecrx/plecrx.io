@@ -93,7 +93,7 @@ export const about = [
 
 export const projects = [
     {
-        title: "Paris Taxi Flares",
+        title: "Ubeetch",
         subtitle: "MERN Stack",
         description: "Display taxi rides considering night & busy periods fees.",
         image: "./mern-stack.png",
