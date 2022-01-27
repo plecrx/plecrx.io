@@ -97,7 +97,7 @@ export const projects = [
         subtitle: "MERN Stack",
         description: "Display taxi rides considering night & busy periods fees.",
         image: "./mern-stack.png",
-        link: "https://paristaxiflares.plecrx.io/",
+        link: "https://ubeetch.plecrx.io/",
     },
     {
         title: "Motion Detection Invaders",
