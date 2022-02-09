@@ -32,6 +32,9 @@ export default function Home() {
                         <a href="https://www.linkedin.com/in/plecrx/">
                             <FaLinkedin color="white" size="2em" />
                         </a>
+                        <a href="https://www.malt.fr/profile/plecrx" style={{width: '2em'}}>
+                            <img src={'malt-logo-white.png'} alt={'malt.fr'}/>
+                        </a>
                         <a href="https://github.com/plecurie">
                             <FaGithubSquare color="white" size="2em" />
                         </a>
@@ -44,7 +47,7 @@ export default function Home() {
                         <a
                             href="#contact"
                             className="inline-flex text-white bg-yellow-800 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-700 rounded text-lg">
-                            Télécharger CV
+                            Me contacter
                         </a>
                     </div>
                 </div>
