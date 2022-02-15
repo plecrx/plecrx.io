@@ -100,6 +100,13 @@ export const projects = [
         link: "https://ubeetch.plecrx.io/",
     },
     {
+        title: "Trivial Sims",
+        subtitle: "React",
+        description: "Simulates home loans and freelance status.",
+        image: "./logo192.png",
+        link: "https://trivial-sims.plecrx.io/",
+    },
+    {
         title: "Motion Detection Invaders",
         subtitle: "ml5 and P5.js",
         description: "Custom spaceInvaders-like game controllable with motion detection",
