@@ -96,7 +96,7 @@ export const projects = [
         title: "Ubeetch",
         subtitle: "MERN Stack",
         description: "Display taxi rides considering night & busy periods fees.",
-        image: "./mern-stack.png",
+        image: "./ubeetch.png",
         link: "https://ubeetch.plecrx.io/",
     },
     {
