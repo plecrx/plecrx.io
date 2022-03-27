@@ -60,10 +60,10 @@ export default function Contact() {
                             <a href="mailto:prescilla@plecrx.io" className="text-yellow-700 leading-relaxed">
                                 prescilla@plecrx.io
                             </a>
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
+                            {/*<h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                                 PHONE
                             </h2>
-                            <p className="leading-relaxed">0612683574</p>
+                            <p className="leading-relaxed">0612683574</p>*/}
                         </div>
                     </div>
                     </div>
