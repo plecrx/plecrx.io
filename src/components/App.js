@@ -26,13 +26,15 @@ export default function App() {
         </Fragment>
 
     return (
-        <main className="text-gray-400 body-font font-mono">
-            <Menu />
-            {location.pathname !== '/legal-notice' && mainpage}
-            <Routes>
-                <Route exact path='/legal-notice' element={<LegalNotice/>}/>
-            </Routes>
+        <body className="text-gray-400 body-font font-mono">
+            <main>
+                <Menu />
+                {location.pathname !== '/legal-notice' && mainpage}
+                <Routes>
+                    <Route exact path='/legal-notice' element={<LegalNotice/>}/>
+                </Routes>
+            </main>
             <Footer />
-        </main>
+        </body>
     );
 }

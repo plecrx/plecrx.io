@@ -2,7 +2,6 @@ import React from 'react'
 import {Link} from "react-router-dom";
 
 export default function Footer() {
-
     return (
         <div style={{backgroundColor: 'rgb(0, 0, 0, 0.2)'}} className='relative bottom-0 w-100 mt-1 flex flex-col text-center '>
             <nav className='my-5'>
