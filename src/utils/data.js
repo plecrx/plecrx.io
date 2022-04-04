@@ -106,6 +106,7 @@ export const projects = [
         image: "./trivial-sims.png",
         link: "https://trivial-sims.plecrx.io/",
     },
+    /*
     {
         title: "Motion Detection Invaders",
         subtitle: "ml5 and P5.js",
@@ -120,7 +121,6 @@ export const projects = [
         image: "./upxiii.png",
         link: "https://upxiii-project.plecrx.io/",
     },
-    /*
     {
         title: "TripCar API",
         subtitle: "MERN Stack",
