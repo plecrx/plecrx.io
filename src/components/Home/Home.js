@@ -2,10 +2,16 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
 import {BsFileArrowDown, FiMail} from "react-icons/all";
+import Stars from "../Stars/Stars";
+import {Canvas} from "@react-three/fiber";
 
 export default function Home() {
     return (
         <section id="home" className="h-screen flex justify-center">
+            <Canvas style={{width: '100vw', height: '100vh'}} camera={{ position: [0, 0, 1] }}>
+                <Stars />
+            </Canvas>
+
             <div className="container absolute top-40 xl:top-20 mb-20 flex lg:flex-row flex-col-reverse items-center lg:bottom-auto bottom-5 my:auto">
                 <div className="flex flex-col flex-grow lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
                     <h1 className="flex flex-col lg:items-start items-center title-font xl:text-4xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
