@@ -1,11 +1,16 @@
 import { ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../../utils/data";
+import Stars from "../Stars/Stars";
+import {Canvas} from "@react-three/fiber";
 
 export default function Skills() {
     return (
-        <section id="skills">
-            <div className="container px-5 py-10 mx-auto">
+        <section id="skills" className="h-screen flex justify-center">
+            <Canvas style={{width: '100vw', height: '100vh'}} camera={{ position: [0, 0, 1] }}>
+                <Stars />
+            </Canvas>
+            <div className="container absolute px-5 py-10 mx-auto">
 
                 <div className="text-center mb-20">
                     <ChipIcon className="w-10 inline-block mb-4" />
