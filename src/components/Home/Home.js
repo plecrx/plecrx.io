@@ -60,7 +60,7 @@ export default function Home() {
                             Me contacter
                         </a>
                     </div>
-                </div>
+                </div>{/*
                 <div className={"absolute right-0 flex flex-grow justify-end lg:mr-40"}>
                     <web.main style={{width: '100%'}}>
                         <Canvas dpr={[10, 2]} camera={{ position: [0, 0, 0], fov: 35 }}>
@@ -74,7 +74,7 @@ export default function Home() {
                             <ContactShadows rotation-x={Math.PI / 2} position={[0, -4.5, 0]} opacity={0.4} width={20} height={20} blur={2} far={4.5} />
                         </Canvas>
                     </web.main>
-                </div>
+                </div>*/}
             </div>
             <svg className="animate-bounce w-12 h-12 mx-auto absolute bottom-5">
                 <a href="#about">
