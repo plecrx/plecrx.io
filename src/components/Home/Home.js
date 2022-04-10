@@ -60,7 +60,14 @@ export default function Home() {
                             Me contacter
                         </a>
                     </div>
-                </div>{/*
+                </div>
+                <div className={"mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2"}>
+                    <img
+                        alt="hero"
+                        src="./bitmoji.png"
+                    />
+                </div>
+                {/*
                 <div className={"absolute right-0 flex flex-grow justify-end lg:mr-40"}>
                     <web.main style={{width: '100%'}}>
                         <Canvas dpr={[10, 2]} camera={{ position: [0, 0, 0], fov: 35 }}>
