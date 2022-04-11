@@ -23,6 +23,7 @@ export default function App() {
             <Skills />
             <Testimonials />
             <Contact />
+
         </Fragment>
 
     return (

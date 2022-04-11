@@ -1,13 +1,15 @@
-import React, {Suspense} from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
 import {BsFileArrowDown, FiMail} from "react-icons/all";
 import Stars from "../Stars/Stars";
 import {Canvas} from "@react-three/fiber";
-import {a as web} from "@react-spring/web";
+import './Home.css'
+
+/*import {a as web} from "@react-spring/web";
 import {a as three} from "@react-spring/three";
 import Model from "../Model/Model";
-import {ContactShadows, Environment} from "@react-three/drei";
+import {ContactShadows, Environment} from "@react-three/drei";*/
 
 export default function Home() {
     return (
@@ -61,11 +63,12 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className={"mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2"}>
+                <div className={"avatar mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2"}>
                     <img
                         alt="hero"
                         src="./bitmoji.png"
                     />
+
                 </div>
                 {/*
                 <div className={"absolute right-0 flex flex-grow justify-end lg:mr-40"}>
