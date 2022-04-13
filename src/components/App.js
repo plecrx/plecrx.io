@@ -10,31 +10,38 @@ import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Testimonials from "./Testimonials/Testimonials";
 import Contact from "./Contact/Contact";
+import StarsBackground from "./StarsBackground/StarsBackground";
 
 export default function App() {
 
     let location = useLocation();
 
-    const mainpage =
+    const mainScreen =
         <Fragment>
+            <StarsBackground/>
             <Home />
+            <StarsBackground/>
             <About/>
+            <StarsBackground/>
             <Projects />
+            <StarsBackground/>
             <Skills />
+            <StarsBackground/>
             <Testimonials />
+            <StarsBackground/>
             <Contact />
         </Fragment>
 
     return (
-        <body className="text-gray-400 body-font font-mono">
-            <main>
+        <div className="text-gray-400 body-font font-mono ">
+            <main className={'overflow-x-hidden'}>
                 <Menu />
-                {location.pathname !== '/legal-notice' && mainpage}
+                {location.pathname !== '/legal-notice' && mainScreen}
                 <Routes>
                     <Route exact path='/legal-notice' element={<LegalNotice/>}/>
                 </Routes>
             </main>
             <Footer />
-        </body>
+        </div>
     );
 }

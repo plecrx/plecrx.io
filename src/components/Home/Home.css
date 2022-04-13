@@ -1,0 +1,7 @@
+.avatar {
+    height: fit-content;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
+    transform: translatey(50px);
+    animation: float 6s ease-in-out infinite;
+}

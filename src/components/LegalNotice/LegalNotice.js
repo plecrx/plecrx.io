@@ -1,6 +1,6 @@
 import React from 'react'
 import {rgpd} from "../../utils/data";
-import Typography from "@material-ui/core/Typography";
+import Typography from '@mui/material/Typography';
 
 export default function LegalNotice() {
 
