@@ -10,11 +10,11 @@ export default function Testimonials() {
 
 
     return (
-        <section id="testimonials" className="h-screen flex justify-center">
-            <Canvas style={{width: '100vw', height: '100vh'}} camera={{ position: [0, 0, 1] }}>
+        <section id="testimonials" className="relative h-screen flex justify-center">
+            <Canvas style={{position: "absolute", width: '100vw', height: '100vh'}} camera={{ position: [0, 0, 1] }}>
                 <Stars />
             </Canvas>
-            <div className="container absolute px-5 py-10 mx-auto text-center">
+            <div className="container px-5 py-10 mx-auto text-center">
                 <UsersIcon className="w-10 inline-block mb-4" />
                 <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
                     Témoignages

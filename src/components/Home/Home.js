@@ -6,23 +6,17 @@ import Stars from "../Stars/Stars";
 import {Canvas} from "@react-three/fiber";
 import './Home.css'
 
-/*import {a as web} from "@react-spring/web";
-import {a as three} from "@react-spring/three";
-import Model from "../Model/Model";
-import {ContactShadows, Environment} from "@react-three/drei";*/
-
 export default function Home() {
     return (
-        <section id="home" className="h-screen flex justify-center">
-            <Canvas style={{width: '100vw', height: '100vh'}} camera={{ position: [0, 0, 1] }}>
+        <section id="home" className="relative h-screen flex justify-center">
+            <Canvas style={{position: "absolute", width: '100vw', height: '100vh'}} camera={{ position: [0, 0, 1] }}>
                 <Stars />
             </Canvas>
 
-            <div className="container absolute top-40 xl:top-20 mb-20 flex lg:flex-row flex-col-reverse  lg:bottom-auto bottom-5 my:auto">
+            <div className="container top-40 xl:top-20 mb-20 flex lg:flex-row flex-col-reverse  lg:bottom-auto bottom-5 my:auto">
                 <div className="flex flex-col lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
                     <h1 className="flex flex-col lg:items-start items-center title-font xl:text-4xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
                         <div className="md:mr-3 mr-0">Bonjour, je suis</div>
-
                         <Typewriter onInit={(typewriter)=> {
                                 typewriter
                                     .typeString("<strong><label class='text-yellow-700'>Prescilla</label></strong>")
@@ -70,21 +64,6 @@ export default function Home() {
                     />
 
                 </div>
-                {/*
-                <div className={"absolute right-0 flex flex-grow justify-end lg:mr-40"}>
-                    <web.main style={{width: '100%'}}>
-                        <Canvas dpr={[10, 2]} camera={{ position: [0, 0, 0], fov: 35 }}>
-                            <three.pointLight position={[10, 10, 10]} intensity={1.5} />
-                            <Suspense fallback={null}>
-                                <group rotation={[0, Math.PI, 0]}>
-                                    <Model open hinge={'-0.425'} />
-                                </group>
-                                <Environment preset="city" />
-                            </Suspense>
-                            <ContactShadows rotation-x={Math.PI / 2} position={[0, -4.5, 0]} opacity={0.4} width={20} height={20} blur={2} far={4.5} />
-                        </Canvas>
-                    </web.main>
-                </div>*/}
             </div>
             <svg className="animate-bounce w-12 h-12 mx-auto absolute bottom-5">
                 <a href="#about">

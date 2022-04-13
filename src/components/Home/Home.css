@@ -1,9 +1,7 @@
 .avatar {
-    box-sizing: border-box;
-    border: 5px white solid;
+    height: fit-content;
     border-radius: 50%;
-    overflow: hidden;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
-    transform: translatey(0px);
+    transform: translatey(50px);
     animation: float 6s ease-in-out infinite;
 }
