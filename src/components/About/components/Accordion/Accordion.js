@@ -66,13 +66,13 @@ const Accordion = (props) => {
     return (
         <div>
             {props.data.map((input, i) => (
-                <StyledAccordion expanded={expanded === i} onChange={() => handleChange(i)}>
+                <StyledAccordion key={`accordion-${i}`} expanded={expanded === i} onChange={() => handleChange(i)}>
                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                         <Typography style={{marginInline: "auto", fontFamily: 'Ubuntu Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace', fontSize: "1.25em"}} className="text-gray-400">{input.title}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        {input.details.map(detail => (
-                            <Typography className={"text-white"} style={{fontFamily: 'ui-sans-serif, system-ui, "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>
+                        {input.details.map((detail, id) => (
+                            <Typography key={`accordion-${i}-details-${id}`} className={"text-white"} style={{fontFamily: 'ui-sans-serif, system-ui, "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'}}>
                                 {detail}
                             </Typography>
                         ))}
