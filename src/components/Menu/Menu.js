@@ -3,7 +3,6 @@ import './Menu.css'
 import Button from '@mui/material/Button';
 
 const Menu = () => {
-
     const [isActive, setIsActive] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
 
@@ -19,7 +18,9 @@ const Menu = () => {
         setIsActive(!isActive)
     }
 
-    const menuItemClassName = (itemName) => {return window.location.hash === itemName ? "nav__list-item active-nav" : "nav__list-item"}
+    const menuItemClassName = (itemName) => (
+        window.location.hash === itemName ? "nav__list-item active-nav" : "nav__list-item"
+    )
 
     return (
         <div className="z-10">
@@ -32,7 +33,6 @@ const Menu = () => {
                     </div>
                 </Button>
             </div>
-
             <div id="menu" className={showMenu ? "nav-active" : "nav"}>
                 <div className="nav">
                     <div className="nav__content">
@@ -48,7 +48,6 @@ const Menu = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 

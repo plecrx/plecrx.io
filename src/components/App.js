@@ -12,10 +12,8 @@ import Testimonials from "./Testimonials/Testimonials";
 import Contact from "./Contact/Contact";
 import StarsBackground from "./StarsBackground/StarsBackground";
 
-export default function App() {
-
-    let location = useLocation();
-
+const App = () => {
+    const location = useLocation();
     const mainScreen =
         <Fragment>
             <StarsBackground/>
@@ -45,3 +43,5 @@ export default function App() {
         </div>
     );
 }
+
+export default App
