@@ -45,7 +45,7 @@ const Home = () => (
 
                 <div className="flex justify-center mt-10 ml-0 lg:ml-3">
                     <a
-                        href="#contact"
+                        href={"#contact"}
                         className="inline-flex text-white bg-yellow-800 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-700 rounded text-lg">
                         Me contacter
                     </a>
@@ -54,12 +54,12 @@ const Home = () => (
             <div className={"avatar mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2 m-20 lg:m-0 "}>
                 <img
                     alt="hero"
-                    src="./bitmoji.png"
+                    src={"./bitmoji.png"}
                 />
             </div>
         </div>
         <svg className="animate-bounce w-12 h-12 mx-auto absolute bottom-5">
-            <a href="#about">
+            <a href={"#about"}>
                 <BsFileArrowDown color="white" size="3em" />
             </a>
         </svg>

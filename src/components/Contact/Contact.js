@@ -23,7 +23,6 @@ const Contact = () => {
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
     const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     const encode = (data) => (

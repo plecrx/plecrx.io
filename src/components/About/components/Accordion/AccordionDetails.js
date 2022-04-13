@@ -6,6 +6,6 @@ export const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     backgroundColor: 'rgb(0, 0, 0, 0.2)',
     marginInline: '2em',
     display: "flex",
-    flexDirection: "column",
-    opacity: '0.2'
+    flexDirection: "column"
 }));
+

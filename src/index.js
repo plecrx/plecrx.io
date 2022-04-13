@@ -9,7 +9,7 @@ const root = createRoot(rootElement)
 
 root.render(
     <BrowserRouter>
-        <StyledEngineProvider injectFirst>
+        <StyledEngineProvider>
             <App />
         </StyledEngineProvider>
     </BrowserRouter>,

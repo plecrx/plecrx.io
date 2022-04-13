@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
-import MuiAccordionSummary from '@mui/material/AccordionSummary';
-import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import {AccordionSummary} from "./AccordionSummary";
+import {AccordionDetails} from "./AccordionDetails";
 
 const StyledAccordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
+))(() => ({
     backgroundColor: 'rgb(33, 34, 38, 0.2)',
     border: '1px solid #212226',
     boxShadow: 'none',
@@ -23,37 +22,6 @@ const StyledAccordion = styled((props) => (
     '&:expanded': {
         margin: 'auto',
     },
-}));
-
-const AccordionSummary = styled((props) => (
-    <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} className='text-yellow-700' />}
-        {...props}
-    />
-))(({ theme }) => ({
-    borderRadius: "1em",
-    borderBottom: '1px solid #212226',
-    backgroundColor: "#2f3238",
-    marginBottom: 3,
-    minHeight: 56,
-    cursor: 'pointer',
-    '&:expanded': {
-        minHeight: 56,
-    },
-    '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-        transform: 'rotate(90deg)',
-    },
-    '& .MuiAccordionSummary-content': {
-        marginLeft: theme.spacing(1),
-    },
-}));
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-    padding: theme.spacing(2),
-    backgroundColor: 'rgb(0, 0, 0, 0.2)',
-    marginInline: '2em',
-    display: "flex",
-    flexDirection: "column"
 }));
 
 const Accordion = (props) => {
