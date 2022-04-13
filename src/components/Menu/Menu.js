@@ -7,7 +7,6 @@ const Menu = () => {
     const [isActive, setIsActive] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
 
-
     useEffect(() => {
         setShowMenu(isActive)
     }, [isActive])

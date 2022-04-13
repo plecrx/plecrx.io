@@ -1,6 +1,4 @@
 import React from "react";
-import Stars from "../Stars/Stars";
-import {Canvas} from "@react-three/fiber";
 
 export default function Contact() {
     const [name, setName] = React.useState("");
@@ -27,11 +25,9 @@ export default function Contact() {
     }
 
     return (
-        <section id="contact" className="flex justify-center">
-            <Canvas style={{width: '100vw', height: '100vh'}} camera={{ position: [0, 0, 1] }}>
-                <Stars />
-            </Canvas>
-            <div className="container absolute px-8 mx-auto flex sm:flex-nowrap flex-wrap">
+        <section id="contact" className="relative">
+
+            <div className="container px-8 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
 
                     <iframe
@@ -48,28 +44,28 @@ export default function Contact() {
 
                     <div style={{background: '#212226'}} className="relative rounded">
 
-                    <div className="bg-gray-500 bg-opacity-20 relative flex flex-wrap py-6 rounded shadow-md">
-                        <div className="px-6">
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                                ADDRESS
-                            </h2>
-                            <p className="mt-1">
-                                Créteil, 94000
-                            </p>
+                        <div className="bg-gray-500 bg-opacity-20 relative flex flex-wrap py-6 rounded shadow-md">
+                            <div className="px-6">
+                                <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                                    ADDRESS
+                                </h2>
+                                <p className="mt-1">
+                                    Créteil, 94000
+                                </p>
+                            </div>
+                            <div className="px-6 mt-4 lg:mt-0">
+                                <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+                                    EMAIL
+                                </h2>
+                                <a href="mailto:prescilla@plecrx.io" className="text-yellow-700 leading-relaxed">
+                                    prescilla@plecrx.io
+                                </a>
+                                {/*<h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
+                                    PHONE
+                                </h2>
+                                <p className="leading-relaxed">0612683574</p>*/}
+                            </div>
                         </div>
-                        <div className="px-6 mt-4 lg:mt-0">
-                            <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                                EMAIL
-                            </h2>
-                            <a href="mailto:prescilla@plecrx.io" className="text-yellow-700 leading-relaxed">
-                                prescilla@plecrx.io
-                            </a>
-                            {/*<h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                                PHONE
-                            </h2>
-                            <p className="leading-relaxed">0612683574</p>*/}
-                        </div>
-                    </div>
                     </div>
                 </div>
 
