@@ -13,10 +13,10 @@ const Skills = () => (
                 </h1>
             </div>
 
-            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+            <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2 justify-evenly">
                 {skills.map((skill) => (
-                    <div key={`skill-${skill.name}`} className="p-2 sm:w-1/6 w-1/3">
-                        <img style={{margin: '10px', height: '75px'}} src={skill.logoLink} alt={skill.name} />
+                    <div key={`skill-${skill.name}`} className="p-2 sm:w-1/6 w-1/3 bg-gray-500 bg-opacity-20 m-4 rounded-xl">
+                        <img style={{margin: '10px', height: '75px', alignSelf: 'center'}} src={skill.logoLink} alt={skill.name} />
                     </div>
                 ))}
             </div>

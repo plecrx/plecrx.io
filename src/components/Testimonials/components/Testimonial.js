@@ -4,7 +4,7 @@ import {faQuoteLeft, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
 
 const Testimonial = ({testimonial}) => (
     <div className="p-4 md:w-1/2 w-full rounded-2xl ">
-        <div className="h-full bg-gray-500 bg-opacity-20 p-8 rounded">
+        <div className="h-full bg-gray-500 bg-opacity-20 p-8 rounded-xl">
             <div className="inline-flex items-center">
                 <span className="flex-grow flex flex-col pl-4 ">
                     <img

@@ -26,7 +26,6 @@ const App = () => {
             <Skills />
             <StarsBackground/>
             <Testimonials />
-            <StarsBackground/>
             <Contact />
         </Fragment>
 
