@@ -1,9 +1,30 @@
 import React from "react";
+import Backdrop from '@mui/material/Backdrop';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Fade from '@mui/material/Fade';
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+};
 
 const Contact = () => {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     const encode = (data) => (
         Object.keys(data)
@@ -20,7 +41,7 @@ const Contact = () => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", name, email, message }),
         })
-            .then(() => alert("Message sent!"))
+            .then(() => setOpen(true))
             .catch((error) => alert(error));
     }
 
@@ -28,7 +49,6 @@ const Contact = () => {
         <section id="contact" className="relative">
             <div className="container px-8 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-
                     <iframe
                         width="100%"
                         height="100%"
@@ -119,6 +139,29 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                    timeout: 500,
+                }}
+            >
+                <Fade in={open}>
+                    <Box sx={style}>
+                        <Typography id="transition-modal-title" variant="h6" component="h2">
+                            Text in a modal
+                        </Typography>
+                        <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                            Merci pour votre message 😉
+                        </Typography>
+                        <Button onClick={handleClose}>Fermer</Button>
+                    </Box>
+                </Fade>
+            </Modal>
         </section>
     );
 }
