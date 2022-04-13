@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 const StyledAccordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-    backgroundColor: "#212226",
+    backgroundColor: 'rgb(33, 34, 38, 0.2)',
     border: '1px solid #212226',
     boxShadow: 'none',
     borderRadius: "3em",
