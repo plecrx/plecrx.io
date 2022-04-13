@@ -1,6 +1,6 @@
 import React from 'react'
 import {AnnotationIcon} from "@heroicons/react/solid";
-import CustomizedAccordion from './components/CustomizedAccordion/CustomizedAccordion'
+import Accordion from './components/Accordion/Accordion'
 import { about } from "../../utils/data";
 import {Canvas} from "@react-three/fiber";
 import Stars from "../Stars/Stars";
@@ -22,7 +22,7 @@ const About = () => {
                 </div>
 
                 <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-                    <CustomizedAccordion data={about} />
+                    <Accordion data={about} />
                 </div>
             </div>
 

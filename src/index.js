@@ -1,13 +1,16 @@
 import React from 'react';
-import { BrowserRouter } from "react-router-dom";
+import {createRoot} from 'react-dom/client';import { BrowserRouter } from "react-router-dom";
 import './index.css';
+import { StyledEngineProvider } from '@mui/material/styles';
 import App from './components/App';
 
+const rootElement = document.getElementById('root')
+const root = createRoot(rootElement)
 
-import { createRoot } from 'react-dom/client';
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(  <BrowserRouter>
-    <App />
-</BrowserRouter>);
-
+root.render(
+    <BrowserRouter>
+        <StyledEngineProvider injectFirst>
+            <App />
+        </StyledEngineProvider>
+    </BrowserRouter>,
+);

@@ -27,7 +27,7 @@ export default function App() {
         </Fragment>
 
     return (
-        <body className="text-gray-400 body-font font-mono">
+        <div className="text-gray-400 body-font font-mono">
             <main>
                 <Menu />
                 {location.pathname !== '/legal-notice' && mainpage}
@@ -36,6 +36,6 @@ export default function App() {
                 </Routes>
             </main>
             <Footer />
-        </body>
+        </div>
     );
 }

@@ -5,7 +5,7 @@ import React from "react";
 
 export const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+        expandIcon={<ArrowForwardIosSharpIcon />}
         {...props}
     />
 ))(() => ({

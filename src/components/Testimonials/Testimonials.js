@@ -20,8 +20,8 @@ export default function Testimonials() {
                     Témoignages
                 </h1>
                 <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-                    {testimonials.map((testimonial) => (
-                        <Testimonial testimonial={testimonial}/>
+                    {testimonials.map((testimonial, index) => (
+                        <Testimonial key={`testimonial-${index}`} testimonial={testimonial}/>
                     ))}
                 </div>
             </div>
