@@ -6,7 +6,7 @@ import { a as three } from '@react-spring/three'
 
 const vec = new THREE.Vector3()
 
-const Model = ({open, hinge, ...props}) => {
+const model = ({open, hinge, ...props}) => {
     const group = useRef()
     const { nodes, materials } = useGLTF('/mac-draco.glb')
 
@@ -42,4 +42,4 @@ const Model = ({open, hinge, ...props}) => {
     )
 }
 
-export default Model*/
+export default model*/

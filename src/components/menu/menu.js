@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import './Menu.css'
+import './menu.css'
 import Button from '@mui/material/Button';
 
 const Menu = () => {

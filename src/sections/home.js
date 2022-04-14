@@ -2,7 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
 import {BsFileArrowDown, FiMail} from "react-icons/all";
-import './Home.css'
+import './home.css'
 
 const Home = () => (
     <section id="home" className="h-screen flex justify-center">

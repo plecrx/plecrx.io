@@ -1,6 +1,7 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faQuoteLeft, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
+import Typography from "@mui/material/Typography";
 
 const Testimonial = ({testimonial}) => (
     <div className="p-4 md:w-1/2 w-full rounded-2xl ">
@@ -25,7 +26,9 @@ const Testimonial = ({testimonial}) => (
             </div>
 
             <p className="leading-relaxed mb-6">
-                <FontAwesomeIcon icon={faQuoteLeft} />{ ` ${testimonial.quote} ` }<FontAwesomeIcon icon={faQuoteRight} />
+                <FontAwesomeIcon icon={faQuoteLeft} />
+                <Typography style={{fontFamily: "'Fira Mono', monospace"}}>{ ` ${testimonial.quote} ` }</Typography>
+                <FontAwesomeIcon icon={faQuoteRight} />
             </p>
         </div>
     </div>

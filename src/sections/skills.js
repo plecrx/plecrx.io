@@ -1,6 +1,6 @@
 import { ChipIcon } from "@heroicons/react/solid";
 import React from "react";
-import { skills } from "../../utils/data";
+import { skills } from "../utils/data";
 
 const Skills = () => (
     <section id="skills">

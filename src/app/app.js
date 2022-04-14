@@ -1,16 +1,16 @@
 import React, {Fragment} from "react";
-import './App.css'
-import Footer from "./Footer/Footer";
 import {Route, Routes, useLocation} from "react-router-dom";
-import LegalNotice from "./LegalNotice/LegalNotice";
-import Menu from "./Menu/Menu";
-import Home from "./Home/Home";
-import About from "./About/About";
-import Projects from "./Projects/Projects";
-import Skills from "./Skills/Skills";
-import Testimonials from "./Testimonials/Testimonials";
-import Contact from "./Contact/Contact";
-import StarsBackground from "./StarsBackground/StarsBackground";
+import Footer from "../layouts/footer";
+import LegalNotice from "../sections/legalNotice";
+import Menu from "../components/menu/menu";
+import Home from "../sections/home";
+import About from "../sections/about";
+import Projects from "../sections/projects";
+import Skills from "../sections/skills";
+import Testimonials from "../sections/testimonials";
+import Contact from "../sections/contact";
+import StarsBackground from "../components/starsBackground/starsBackground";
+import './app.css'
 
 const App = () => {
     const location = useLocation();

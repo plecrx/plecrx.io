@@ -1,6 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../../utils/data";
+import { projects } from "../utils/data";
 
 const Projects = () => (
     <section id="projects">

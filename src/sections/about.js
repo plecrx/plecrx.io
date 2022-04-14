@@ -1,7 +1,7 @@
 import React from 'react'
 import {AnnotationIcon} from "@heroicons/react/solid";
-import Accordion from './components/Accordion/Accordion'
-import { about } from "../../utils/data";
+import Accordion from '../components/accordion/accordion'
+import { about } from "../utils/data";
 
 const About = () => {
     return (

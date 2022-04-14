@@ -1,5 +1,5 @@
 import React from 'react'
-import {rgpd} from "../../utils/data";
+import {rgpd} from "../utils/data";
 import Typography from '@mui/material/Typography';
 
 const LegalNotice = () => (
