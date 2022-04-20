@@ -1,8 +1,6 @@
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here you can describe the project, why you made it and **for who you made it**, but mostly don't forget to add a screenshot like the image above AND a link to the demo like this : https://NicolasBrondin.github.io/basic-readme-template/
+Prescilla's Portfolio
 
 ### Built With
 
@@ -46,4 +44,4 @@ npm start
 
 prescilla@plecrx.io
 
-Project Link: [https://github.com/plecrx/plecrx.io](https://github.com/plecrx/plecrx.io)
+Project Link: [https://plecrx.io](https://plecrx.io)
