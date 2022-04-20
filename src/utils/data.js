@@ -36,7 +36,7 @@ export const about = [
         ".",
         "ESGI : Ecole Supérieure de Génie Informatique.",
         "J'ai préféré poursuivre mon apprentissage de l'informatique en alternance pour apprendre par la pratique et assimiler les techniques de travail en entreprise. " +
-        "C'est d'ailleurs la raison pour laquelle j'ai intégré l'ESGI, où il est demandé une forte autonomie et qui est plus axé sur la pratique que sur la théorie : " +
+        "C'est d'ailleurs la raison pour laquelle j'ai intégré l'ESGI du réseau Grandes Ecoles Spécialisées (GES), où il est demandé une forte autonomie et qui est plus axé sur la pratique que sur la théorie : " +
         "un projet thématique en équipe était requis pour chaque cours, en plus d'un projet annuel chaque année.",
         "Je me suis orientée en 'Mobilité et objets connectés', ce qui consiste à développer des applications mobiles et des infrastrutures IoT.",
         "J'ai appris à développer et consommer des API sur divers appareils connectés (Android, Iphone, WatchOS, Raspberry, Arduino...). ",
