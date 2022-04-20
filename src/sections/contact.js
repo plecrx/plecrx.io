@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useRef} from "react";
+import { sendForm } from '@emailjs/browser';
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -22,26 +23,19 @@ const Contact = () => {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
+    const form = useRef();
     const [open, setOpen] = React.useState(false);
     const handleClose = () => setOpen(false);
 
-    const encode = (data) => (
-        Object.keys(data)
-            .map(
-                (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-            )
-            .join("&")
-    )
-
-    const handleSubmit = (e) => {
+    const sendEmail = (e) => {
         e.preventDefault();
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", name, email, message }),
-        })
-            .then(() => setOpen(true))
-            .catch((error) => alert(error));
+
+        sendForm('service_xyv618k', 'template_8su8b2h', form.current, 'dzD_0PnQ52xKP1fiF')
+            .then((result) => {
+                setOpen(true)
+            }, (error) => {
+                console.log(error.text);
+            });
     }
 
     return (
@@ -78,45 +72,40 @@ const Contact = () => {
                                 <a href="mailto:prescilla@plecrx.io" className="text-yellow-700 leading-relaxed">
                                     prescilla@plecrx.io
                                 </a>
-                                {/*<h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                                    PHONE
-                                </h2>
-                                <p className="leading-relaxed">0612683574</p>*/}
                             </div>
                         </div>
                     </div>
                 </div>
                 <form
+                    ref={form}
                     name="contact"
-                    onSubmit={handleSubmit}
+                    onSubmit={sendEmail}
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
 
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                         Me contacter
                     </h2>
                     <div className="relative mb-4">
-                        <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+                        <label htmlFor="from_name" className="leading-7 text-sm text-gray-400">
                             Name
                         </label>
                         <input
                             type="text"
-                            id="name"
-                            name="name"
+                            id="from_name"
+                            name="from_name"
                             className="w-full bg-gray-500 bg-opacity-20 rounded border border-gray-700 focus:border-yellow-600 focus:ring-2 focus:ring-yellow-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                            onChange={(e) => setName(e.target.value)}
                         />
                     </div>
                     <div className="relative mb-4">
-                        <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+                        <label htmlFor="from_email" className="leading-7 text-sm text-gray-400">
                             Email
                         </label>
                         <input
                             type="email"
-                            id="email"
-                            name="email"
+                            id="from_email"
+                            name="from_email"
                             className="w-full bg-gray-500 bg-opacity-20 rounded border border-gray-700 focus:border-yellow-600 focus:ring-2 focus:ring-yellow-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
+                        />git
                     </div>
                     <div className="relative mb-4">
                         <label
@@ -128,7 +117,6 @@ const Contact = () => {
                             id="message"
                             name="message"
                             className="w-full bg-gray-500 bg-opacity-20 rounded border border-gray-700 focus:border-yellow-600 focus:ring-2 focus:ring-yellow-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                            onChange={(e) => setMessage(e.target.value)}
                         />
                     </div>
                     <button
