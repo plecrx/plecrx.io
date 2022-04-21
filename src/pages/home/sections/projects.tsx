@@ -8,7 +8,7 @@ const Projects = () => (
             <div className="text-center mb-20">
                 <CodeIcon className="w-10 inline-block mb-4" />
                 <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
-                    Projets (en construction)
+                    Projets (en développement)
                 </h1>
             </div>
             <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
