@@ -101,7 +101,7 @@ export const projects = [
     },
     {
         title: "Trivial Sims",
-        subtitle: "React",
+        subtitle: "Next | React",
         description: "Simulates home loans and freelance status.",
         image: "./trivial-sims.png",
         link: "https://trivial-sims.plecrx.io/",
