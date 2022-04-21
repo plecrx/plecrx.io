@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
-import {BsFileArrowDown, FiMail} from "react-icons/all";
+import {FaAngleDoubleDown, FiMail} from "react-icons/all";
 import styled from "@emotion/styled";
 
 const Avatar = styled.div`
@@ -13,8 +13,8 @@ const Avatar = styled.div`
 `
 
 const Heroheader = () => (
-    <section id="home" className="h-screen flex justify-center">
-        <div className="container absolute top-40 xl:top-20 mb-20 flex lg:flex-row flex-col-reverse items-center lg:bottom-auto bottom-5 my:auto">
+    <section id="home" className="h-screen flex flex-col justify-center items-center">
+        <div className="container mb-20 flex lg:flex-row flex-col-reverse lg:bottom-auto bottom-5 my:auto">
             <div className="flex flex-col flex-grow lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
                 <h1 className="flex flex-col lg:items-start items-center title-font xl:text-4xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
                     <div className="md:mr-3 mr-0">Bonjour, je suis</div>
@@ -59,16 +59,16 @@ const Heroheader = () => (
                     </a>
                 </div>
             </div>
-            <Avatar className={"mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2 m-20 lg:m-0 "}>
+            <Avatar className="mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2 m-20 lg:m-0 ">
                 <img
                     alt="hero"
-                    src={"./bitmoji.png"}
+                    src="./bitmoji.png"
                 />
             </Avatar>
         </div>
-        <svg className="animate-bounce w-12 h-12 mx-auto absolute bottom-5">
-            <a href={"#about"}>
-                <BsFileArrowDown color="white" size="3em" />
+        <svg className="animate-bounce w-12 h-12 relative w-100 mb-5 mx-auto clear-both">
+            <a href="#about">
+                <FaAngleDoubleDown color="#d3531a" size="3em" />
             </a>
         </svg>
     </section>
