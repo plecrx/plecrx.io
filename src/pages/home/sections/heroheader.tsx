@@ -66,11 +66,11 @@ const Heroheader = () => (
                 />
             </Avatar>
         </div>
-        <svg className="animate-bounce w-12 h-12 relative w-100 mx-auto clear-both">
-            <a href="#about">
+        <a href="#about">
+            <svg className="animate-bounce w-12 h-12 relative w-100 mx-auto clear-both">
                 <FaAngleDoubleDown color="#d3531a" size="3em" />
-            </a>
-        </svg>
+            </svg>
+        </a>
     </section>
 )
 
