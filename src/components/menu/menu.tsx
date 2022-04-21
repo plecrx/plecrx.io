@@ -40,7 +40,7 @@ const Menu = () => {
                     <div className="nav__content">
                         <ul className="nav__list">
                             <li className={menuItemClassName("#home")}><a href={"/#home"} className="hover-target" onClick={handleMenuItemClick}>Accueil</a></li>
-                            <li className={menuItemClassName("#about")}><Link to={{pathname: '/', hash: '#about'}} className="hover-target" onClick={handleMenuItemClick}>À propos</Link></li>
+                            <li className={menuItemClassName("#about")}><a href={"/#about"} className="hover-target" onClick={handleMenuItemClick}>À propos</a></li>
                             <li className={menuItemClassName("#projects")}><a href={"/#projects"} className="hover-target" onClick={handleMenuItemClick}>Projets</a></li>
                             <li className={menuItemClassName("#skills")}><a href={"/#skills"} className="hover-target" onClick={handleMenuItemClick}>Compétences</a></li>
                             <li className={menuItemClassName("#testimonials")}><a href={"/#testimonials"} className="hover-target" onClick={handleMenuItemClick}>Témoignages</a></li>
