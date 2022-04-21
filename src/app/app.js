@@ -1,14 +1,14 @@
 import React, {Fragment} from "react";
 import {Route, Routes, useLocation} from "react-router-dom";
 import Footer from "../layouts/footer";
-import LegalNotice from "../sections/legalNotice";
+import LegalNotice from "../pages/legalNotice/legalNotice";
 import Menu from "../components/menu/menu";
-import Home from "../sections/home";
-import About from "../sections/about";
-import Projects from "../sections/projects";
-import Skills from "../sections/skills";
-import Testimonials from "../sections/testimonials";
-import Contact from "../sections/contact";
+import Heroheader from "../pages/home/heroheader";
+import About from "../pages/home/about";
+import Projects from "../pages/home/projects";
+import Skills from "../pages/home/skills";
+import Testimonials from "../pages/home/testimonials";
+import Contact from "../pages/home/contact";
 import StarsBackground from "../components/starsBackground/starsBackground";
 import './app.css'
 
@@ -17,7 +17,7 @@ const App = () => {
     const mainScreen =
         <Fragment>
             <StarsBackground/>
-            <Home />
+            <Heroheader />
             <StarsBackground/>
             <About/>
             <StarsBackground/>

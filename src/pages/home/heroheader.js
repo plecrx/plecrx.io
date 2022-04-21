@@ -2,9 +2,9 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
 import {BsFileArrowDown, FiMail} from "react-icons/all";
-import './home.css'
+import './heroheader.css'
 
-const Home = () => (
+const Heroheader = () => (
     <section id="home" className="h-screen flex justify-center">
         <div className="container absolute top-40 xl:top-20 mb-20 flex lg:flex-row flex-col-reverse items-center lg:bottom-auto bottom-5 my:auto">
             <div className="flex flex-col flex-grow lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
@@ -66,4 +66,4 @@ const Home = () => (
     </section>
 )
 
-export default Home
+export default Heroheader

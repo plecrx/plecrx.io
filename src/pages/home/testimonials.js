@@ -1,7 +1,7 @@
 import React from "react";
 import {UsersIcon} from "@heroicons/react/solid";
-import { testimonials } from "../utils/data";
-import Testimonial from "../components/testimonial";
+import { testimonials } from "../../utils/data";
+import Testimonial from "../../components/testimonial";
 
 const Testimonials = () => (
     <section id="testimonials">
