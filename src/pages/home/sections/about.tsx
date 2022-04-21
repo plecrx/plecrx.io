@@ -1,11 +1,11 @@
 import React from 'react'
 import {AnnotationIcon} from "@heroicons/react/solid";
-import Accordion from '../../components/accordion/accordion'
-import { about } from "../../utils/data";
+import Accordion from '../../../components/accordion/accordion'
+import { about } from "../../../utils/data";
 
 const About = () => {
     return (
-        <section id="about" className="h-screen flex justify-center">
+        <section id="about" className="h-full flex justify-center">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
                     <AnnotationIcon className="w-10 inline-block mb-4" />

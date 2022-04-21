@@ -5,17 +5,17 @@ import * as random from 'maath/random/dist/maath-random.esm'
 
 const Stars = () => {
     const ref = useRef<any>(null)
-    const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.5 }))
+    const [sphere] = useState(() => random.inSphere(new Float32Array(25000), { radius: 1.5 }))
     useFrame((state, delta) => {
-        ref.current.rotation.x -= delta / 10
-        ref.current.rotation.y -= delta / 15
+        ref.current.rotation.x -= delta / 50
+        ref.current.rotation.y -= delta / 50
     })
     return (
-        <group rotation={[0, 0, Math.PI / 4]}>
+        <group rotation={[0, 0, Math.PI / 30]}>
             {/* @ts-ignore */}
             <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} >
                 {/* @ts-ignore */}
-                <PointMaterial transparent color="#d3531a" size={0.005} sizeAttenuation depthWrite={false} />
+                <PointMaterial transparent color="#d3531a" size={0.0015} sizeAttenuation depthWrite={false} />
             </Points>
         </group>
     )

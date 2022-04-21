@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 
 const Footer = () => (
-    <div style={{backgroundColor: 'rgb(0, 0, 0, 0.2)'}} className='relative bottom-0 w-100 mt-1 flex flex-col text-center '>
+    <div style={{backgroundColor: 'rgb(0, 0, 0, 0.2)'}} className='relative w-100 mt-10 flex flex-col text-center clear-both '>
         <nav className='my-5'>
             <Link to="/legal-notice">Mentions légales</Link>
         </nav>

@@ -1,9 +1,9 @@
 import { ChipIcon } from "@heroicons/react/solid";
 import React from "react";
-import { skills } from "../../utils/data";
+import { skills } from "../../../utils/data";
 
 const Skills = () => (
-    <section id="skills" className="h-screen flex justify-center">
+    <section id="skills" className="h-full flex justify-center">
         <div className="container px-5 py-10 mx-auto">
 
             <div className="text-center mb-20">

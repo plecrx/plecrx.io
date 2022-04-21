@@ -36,7 +36,7 @@ const Contact = () => {
     }
 
     return (
-        <section id="contact" className="relative h-screen flex justify-center">
+        <section id="contact" className="relative h-full flex justify-center">
             <div className="container px-8 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end relative" style={{maxHeight: '500px'}}>
                     <iframe
