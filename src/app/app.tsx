@@ -10,7 +10,12 @@ import Skills from "../pages/home/skills";
 import Testimonials from "../pages/home/testimonials";
 import Contact from "../pages/home/contact";
 import StarsBackground from "../components/starsBackground/starsBackground";
-import './app.css'
+import styled from "@emotion/styled";
+
+const StyledBody = styled.div`
+  background-color: #212226;
+  font-family: 'Josefin Sans', sans-serif;
+`
 
 const App = () => {
     const location = useLocation();
@@ -30,16 +35,16 @@ const App = () => {
         </Fragment>
 
     return (
-        <div className="text-gray-400 body-font font-mono ">
+        <StyledBody className="text-gray-400 body-font font-mono ">
             <main className={'overflow-x-hidden'}>
                 <Menu />
                 {location.pathname !== '/legal-notice' && mainScreen}
                 <Routes>
-                    <Route exact path='/legal-notice' element={<LegalNotice/>}/>
+                    <Route path='/legal-notice' element={<LegalNotice/>}/>
                 </Routes>
             </main>
             <Footer />
-        </div>
+        </StyledBody>
     );
 }
 

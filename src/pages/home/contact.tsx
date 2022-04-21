@@ -20,19 +20,16 @@ const style = {
 };
 
 const Contact = () => {
-    const [name, setName] = React.useState("");
-    const [email, setEmail] = React.useState("");
-    const [message, setMessage] = React.useState("");
-    const form = useRef();
+    const form = useRef<any>(null);
     const [open, setOpen] = React.useState(false);
     const handleClose = () => setOpen(false);
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.FormEvent<any>) => {
         e.preventDefault();
 
         sendForm('service_xyv618k', 'template_8su8b2h', form.current, 'dzD_0PnQ52xKP1fiF')
             .then((result) => {
-                setOpen(true)
+                if (result.text === 'OK') setOpen(true)
             }, (error) => {
                 console.log(error.text);
             });
@@ -138,8 +135,9 @@ const Contact = () => {
                 }}
             >
                 <Fade in={open}>
+                    {/* @ts-ignore */}
                     <Box sx={style}>
-                        <Typography id="transition-modal-title" variant="h6" component="h2">
+                        <Typography id="transition-modal-title" variant="h6" component="div">
                             Text in a modal
                         </Typography>
                         <Typography id="transition-modal-description" sx={{ mt: 2 }}>

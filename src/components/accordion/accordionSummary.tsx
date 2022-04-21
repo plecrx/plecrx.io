@@ -1,9 +1,12 @@
-import {styled} from "@mui/material/styles";
-import MuiAccordionSummary from "@mui/material/AccordionSummary";
-import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import React from "react";
+import {styled} from "@mui/material/styles";
+import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
+import MuiAccordionSummary, {
+    AccordionSummaryProps,
+} from '@mui/material/AccordionSummary';
 
-export const AccordionSummary = styled((props) => (
+
+export const AccordionSummary = styled((props: AccordionSummaryProps) => (
     <MuiAccordionSummary
         expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} className='text-yellow-700' />}
         {...props}

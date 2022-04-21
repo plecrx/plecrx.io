@@ -5,8 +5,14 @@ import { useGLTF } from '@react-three/drei'
 import { a as three } from '@react-spring/three'
 
 const vec = new THREE.Vector3()
+*/
+type ModelProps = {
+    open: () => void;
+    hinge: () => void;
+}
 
-const model = ({open, hinge, ...props}) => {
+const model = ({open, hinge, ...props}: ModelProps) => {
+    /*
     const group = useRef()
     const { nodes, materials } = useGLTF('/mac-draco.glb')
 
@@ -40,6 +46,7 @@ const model = ({open, hinge, ...props}) => {
             <mesh material={materials.touchbar} geometry={nodes.touchbar.geometry} position={[0, -0.03, 1.2]} />
         </group>
     )
+     */
 }
 
-export default model*/
+export default model

@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import MuiAccordion from '@mui/material/Accordion';
+import MuiAccordion, { AccordionProps as StyledAccordionProps } from '@mui/material/Accordion';
 import Typography from '@mui/material/Typography';
 import {AccordionSummary} from "./accordionSummary";
 import {AccordionDetails} from "./accordionDetails";
+import {useState} from "react";
 
-const StyledAccordion = styled((props) => (
+const StyledAccordion = styled((props: StyledAccordionProps) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(() => ({
     backgroundColor: 'rgb(33, 34, 38, 0.2)',
@@ -24,19 +25,28 @@ const StyledAccordion = styled((props) => (
     },
 }));
 
-const Accordion = (props) => {
-    const [expanded, setExpanded] = React.useState('panel1');
+type AccordionProps = {
+    data: {
+        title: string,
+        details: string[]
+    }[]
+}
 
-    const handleChange = (index) => {
+const Accordion = ({data}: AccordionProps) => {
+    const [expanded, setExpanded] = useState<number|null>(0);
+
+    const handleChange = (index: number) => {
         setExpanded(expanded !== index ? index : null);
     };
 
     return (
         <div>
-            {props.data.map((input, i) => (
+            {data.map((input, i) => (
                 <StyledAccordion key={`accordion-${i}`} expanded={expanded === i} onChange={() => handleChange(i)}>
-                    <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                        <Typography style={{marginInline: "auto", fontFamily: "'Josefin Sans', sans-serif", fontSize: "1.25em"}} className="text-gray-400">{input.title}</Typography>
+                    <AccordionSummary aria-controls={`panel-${i}-content`} id={`panel-${i}-header`}>
+                        <Typography style={{marginInline: "auto", fontFamily: "'Josefin Sans', sans-serif", fontSize: "1.25em"}} className="text-gray-400">
+                            {input.title}
+                        </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         {input.details.map((detail, id) => (

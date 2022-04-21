@@ -3,7 +3,17 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faQuoteLeft, faQuoteRight} from "@fortawesome/free-solid-svg-icons";
 import Typography from "@mui/material/Typography";
 
-const Testimonial = ({testimonial}) => (
+type TestimonialProps = {
+    testimonial: {
+        image: string;
+        name: string;
+        role: string;
+        company: string;
+        quote: string;
+    }
+}
+
+const Testimonial = ({testimonial}: TestimonialProps) => (
     <div className="p-4 md:w-1/2 w-full rounded-2xl ">
         <div className="h-full bg-gray-500 bg-opacity-20 p-8 rounded-xl">
             <div className="inline-flex items-center">

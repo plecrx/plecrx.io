@@ -18,7 +18,7 @@ const Menu = () => {
         setIsActive(!isActive)
     }
 
-    const menuItemClassName = (itemName) => (
+    const menuItemClassName = (itemName: string) => (
         window.location.hash === itemName ? "nav__list-item active-nav" : "nav__list-item"
     )
 

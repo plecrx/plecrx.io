@@ -2,7 +2,15 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import {FaLinkedin, FaGithubSquare} from 'react-icons/fa';
 import {BsFileArrowDown, FiMail} from "react-icons/all";
-import './heroheader.css'
+import styled from "@emotion/styled";
+
+const Avatar = styled.div`
+  height: fit-content;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
+  transform: translatey(50px);
+  animation: float 6s ease-in-out infinite;
+`
 
 const Heroheader = () => (
     <section id="home" className="h-screen flex justify-center">
@@ -51,12 +59,12 @@ const Heroheader = () => (
                     </a>
                 </div>
             </div>
-            <div className={"avatar mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2 m-20 lg:m-0 "}>
+            <Avatar className={"mx-auto lg:ml-20 lg:mr-40 w-1/4 md:1/3 lg:1/2 m-20 lg:m-0 "}>
                 <img
                     alt="hero"
                     src={"./bitmoji.png"}
                 />
-            </div>
+            </Avatar>
         </div>
         <svg className="animate-bounce w-12 h-12 mx-auto absolute bottom-5">
             <a href={"#about"}>
