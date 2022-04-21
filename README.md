@@ -6,6 +6,7 @@ Prescilla's Portfolio
 
 * 🖊️ ReactJS
 * 🖊️ React ThreeJS
+* 🖊️ EmailJS
 * 🐙 Tailwind
 * 💻 Webstorm
 
