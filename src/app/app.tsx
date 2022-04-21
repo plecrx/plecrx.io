@@ -31,11 +31,12 @@ const App = () => {
             <Skills />
             <StarsBackground/>
             <Testimonials />
+            <StarsBackground/>
             <Contact />
         </Fragment>
 
     return (
-        <StyledBody className="text-gray-400 body-font font-mono ">
+        <StyledBody className="text-gray-400 body-font font-mono w-full ">
             <main className={'overflow-x-hidden'}>
                 <Menu />
                 {location.pathname !== '/legal-notice' && mainScreen}

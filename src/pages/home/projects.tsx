@@ -3,7 +3,7 @@ import React from "react";
 import { projects } from "../../utils/data";
 
 const Projects = () => (
-    <section id="projects">
+    <section id="projects" style={{height: '100vh'}}>
         <div className="container px-5 py-10 mx-auto">
             <div className="text-center mb-20">
                 <CodeIcon className="w-10 inline-block mb-4" />

@@ -5,7 +5,7 @@ import { about } from "../../utils/data";
 
 const About = () => {
     return (
-        <section id="about">
+        <section id="about" className="h-screen flex justify-center">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
                     <AnnotationIcon className="w-10 inline-block mb-4" />

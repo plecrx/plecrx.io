@@ -36,9 +36,9 @@ const Contact = () => {
     }
 
     return (
-        <section id="contact" className="relative">
+        <section id="contact" className="relative h-screen flex justify-center">
             <div className="container px-8 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-                <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end relative" style={{maxHeight: '500px'}}>
                     <iframe
                         width="100%"
                         height="100%"
@@ -102,7 +102,7 @@ const Contact = () => {
                             id="from_email"
                             name="from_email"
                             className="w-full bg-gray-500 bg-opacity-20 rounded border border-gray-700 focus:border-yellow-600 focus:ring-2 focus:ring-yellow-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                        />git
+                        />
                     </div>
                     <div className="relative mb-4">
                         <label
