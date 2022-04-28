@@ -2,22 +2,17 @@ export const about = [
   {
     title: "Carrière sportive internationale",
     details: [
-        "[2011 - aujourd'hui] 🇫🇷 Détentrice du record de France junior de lancer de javelot",
-        "[2008 - 2014] 🥇- Championnats de France U18 | U20 | U23",
-        "[2014] 🥉- Coupe d'Europe hivernale U23 (Leiria, Portugal)",
-        "[2014] 🥈- Championnats Méditerrannéens U23 (Aubagne, France)",
-        "[2013] 4eme place - Coupe d'Europe hivernale U23 (Castellón de la Plana, Espagne)",
-        "[2012] 4eme place - Coupe d'Europe hivernale U23 (Bar, Montenegro)",
-        "[2011] 4eme place - Championnats d'Europe U20 (Tallin, Estonie)",
+        "[2008 - 2015] Sportive de haut niveau (lancer de javelot)",
+        "[2011 - aujourd'hui] 🇫🇷 Détentrice du record de France junior",
     ]
   },
   {
     title: "Double projet sport-études à l'INSEP",
     details: [
-        "[2011] Intégration collectif INSEP avec aménagement des horaires de cours",
+        "[2011] Intégration collectif INSEP avec aménagement des horaires de formation",
         "[2012] Obtention Baccalauréat Scientifique option SVT",
-        "[2012 - 2014] Commencement d'un cursus STAPS",
-        "[décembre 2013 - août 2014] Service Civique monitrice des sports pour la Mairie de Paris",
+        "[2012 - 2014] Cursus Licence STAPS",
+        "[décembre 2013 - août 2014] Service Civique monitrice des sports avec la Mairie de Paris",
         "[2014] Arrêt de carrière internationale et départ de l'INSEP",
     ]
   },
@@ -31,15 +26,14 @@ export const about = [
   {
     title: "Formation en école d'ingénieur",
     details: [
-        "[2016 - 2018] Obtention bachelor, spécialité Mobilité et objets connectés (titre RNCP: 'Chargée de projet en systèmes informatiques appliqués')",
-        "[2018 - 2020] Obtention mastère, spécialité Mobilité et objets connectés (titre: 'Experte en ingénierie informatique et des systèmes d'information')",
+        "[2016 - 2018] Obtention Bachelor, spécialité Mobilité et objets connectés (titre RNCP: 'Chargée de projet en systèmes informatiques appliqués')",
+        "[2018 - 2020] Obtention Mastère, spécialité Mobilité et objets connectés (titre: 'Experte en ingénierie informatique et des systèmes d'information')",
         ".",
         "ESGI : Ecole Supérieure de Génie Informatique.",
         "J'ai préféré poursuivre mon apprentissage de l'informatique en alternance pour apprendre par la pratique et assimiler les techniques de travail en entreprise. " +
-        "C'est d'ailleurs la raison pour laquelle j'ai intégré l'ESGI du réseau Grandes Ecoles Spécialisées (GES), où il est demandé une forte autonomie et qui est plus axé sur la pratique que sur la théorie : " +
-        "un projet thématique en équipe était requis pour chaque cours, en plus d'un projet annuel chaque année.",
-        "Je me suis orientée en 'Mobilité et objets connectés', ce qui consiste à développer des applications mobiles et des infrastrutures IoT.",
-        "J'ai appris à développer et consommer des API sur divers appareils connectés (Android, Iphone, WatchOS, Raspberry, Arduino...). ",
+        "C'est d'ailleurs la raison pour laquelle j'ai intégré l'ESGI du réseau Grandes Ecoles Spécialisées (GES), où il est demandé une forte autonomie et qui est plus axée sur la pratique que sur la théorie : " +
+        "un projet thématique en équipe était requis pour chaque module, en plus d'un projet annuel chaque année.",
+        "Je me suis orientée en 'Mobilité et objets connectés', ce qui consiste à développer des API, des applications mobiles et IoT (Rapsberry Pi, Arduino, WatchOS...).",
     ]
   },
   {
@@ -47,10 +41,10 @@ export const about = [
     details: [
         "[2016 - 2020] J'ai travaillé au poste d'ingénieure d'études et de développement en alternance chez le leader mondial du câble optique sous-marin, Alcatel Submarine Networks (ASN, Nokia). ",
         ".",
-        "- Développement de nouvelles fonctionnalités et supervision d'une application legacy de gestion de projet construite en Java JEE.",
+        "- Ajout de nouvelles fonctionnalités sur une application de gestion RH codée en Java JEE.",
         "- Migration du projet legacy de Java 6 vers Java 8.\n",
-        "- Modélisation et conception d'une architecture orientée services visant à développer une nouvelle application de gestion de projet en microservices avec NodeJS et Angular.",
-        "- Conception d'une stack ELK avec son IHM en Python pour filtrer et catégoriser les big data provenant d'équipements sous-marins pour la maintenance des câbles de fibre optique intercontinentaux.",
+        "- Modélisation et conception d'une architecture orientée services, et refonte de l'application de gestion RH en full javascript avec NodeJS et Angular.",
+        "- Conception d'une stack ELK (Elasticsearch, Logstash, Kibana) pour filtrer et catégoriser les big data provenant d'équipements sous-marins pour la maintenance des câbles de fibre optique intercontinentaux.",
     ]
 
   },
@@ -84,8 +78,9 @@ export const about = [
         "- Communication / formation des utilisateurs de nos solutions en interne.",
         ".",
         "[octobre 2021 - ... ] Développement frontend",
-        "- Implémentation d'un monorepo avec un Design System en prévision du développement de toutes les applications \"front\" Energisme.",
-        "- Conception, intégration et déploiement d'applications web frontend,",
+        "- Implémentation d'un monorepo avec Nx.",
+        "- Construction d'un Design System avec Storybook",
+        "- Développement, intégration et déploiement de l'écosystème applicatif frontend de l'entreprise,",
     ]
   },
 ]
