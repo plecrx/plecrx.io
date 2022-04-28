@@ -14,7 +14,7 @@ const Avatar = styled.div`
 
 const Heroheader = () => (
     <section id="home" className="h-screen flex flex-col items-center justify-around">
-        <div className="container mb-20 flex lg:flex-row flex-col-reverse lg:bottom-auto bottom-5 my:auto">
+        <div className="container mb-20 flex lg:flex-row flex-col-reverse lg:bottom-auto bottom-5 my:auto z-20">
             <div className="flex flex-col flex-grow lg:items-start items-center lg:m-20 xl:px-20 lg:mr-auto">
                 <h1 className="flex flex-col lg:items-start items-center title-font xl:text-4xl sm:text-2xl text-xl font-medium text-white m-3 mb-8" >
                     <div className="md:mr-3 mr-0">Bonjour, je suis</div>

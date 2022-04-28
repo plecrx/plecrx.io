@@ -3,7 +3,7 @@ import React from "react";
 import { skills } from "../../../utils/data";
 
 const Skills = () => (
-    <section id="skills" className="h-full flex justify-center">
+    <section id="skills" className="h-full flex justify-center z-0">
         <div className="container px-5 py-10 mx-auto">
 
             <div className="text-center mb-20">
