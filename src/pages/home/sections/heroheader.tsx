@@ -24,13 +24,13 @@ const Heroheader = () => (
                             .typeString("<strong><label class='text-yellow-800'>Prescilla</label></strong>")
                             .pauseFor(1000)
                             .deleteAll()
-                            .typeString("<strong><label class='text-yellow-800'>Développeuse Frontend</label></strong>")
+                            .typeString("<strong><label class='text-yellow-800'>Développeuse React</label></strong>")
                             .pauseFor(1000)
                             .deleteAll()
-                            .typeString("<strong><label class='text-yellow-800'>Développeuse Backend</label></strong>")
+                            .typeString("<strong><label class='text-yellow-800'>Développeuse NodeJS</label></strong>")
                             .pauseFor(1000)
                             .deleteAll()
-                            .typeString("<strong><label class='text-yellow-800'>Développeuse Mobile</label></strong>")
+                            .typeString("<strong><label class='text-yellow-800'>Développeuse React Native</label></strong>")
                             .pauseFor(1000)
                             .start();
                     }} options={{loop: true, autoStart: true}}
