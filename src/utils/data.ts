@@ -101,6 +101,13 @@ export const projects = [
         image: "./trivial-sims.png",
         link: "https://trivial-sims.plecrx.io/",
     },
+    {
+        title: "Immo Project",
+        subtitle: "Next | React | MongoDB",
+        description: "Simple fetching of users from database. Integration of a Figma mockup with styled-component.",
+        image: "./trivial-sims.png",
+        link: "https://immo-project.plecrx.io/",
+    },
     /*{
         title: "Motion Detection Invaders",
         subtitle: "ml5 and P5.js",
