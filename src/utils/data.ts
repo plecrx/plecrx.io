@@ -104,8 +104,8 @@ export const projects = [
     {
         title: "Immo Project",
         subtitle: "Next | React | MongoDB",
-        description: "Simple fetching of users from database. Integration of a Figma mockup with styled-component.",
-        image: "./trivial-sims.png",
+        description: "Integration of a Figma mockup with react-table and styled-component.",
+        image: "./immo-project.png",
         link: "https://immo-project.plecrx.io/",
     },
     /*{
